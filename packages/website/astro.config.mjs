@@ -1,12 +1,15 @@
 import svelte from '@astrojs/svelte';
 import tailwind from '@astrojs/tailwind';
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 
 /**
  * @type {import('astro/types').Config}
  */
 export default defineConfig({
 	integrations: [svelte(), tailwind()],
+	image: {
+		service: passthroughImageService(),
+	},
 	prefetch: true,
 	vite: {
 		optimizeDeps: {
