@@ -7,7 +7,9 @@
 
 ## ウェブサイト
 
-- URL未定
+[![Deploy Pages](https://github.com/d-zero-dev/a11y-checklist/actions/workflows/static.yml/badge.svg)](https://github.com/d-zero-dev/a11y-checklist/actions/workflows/static.yml)
+
+- https://a11y-checklist.d-zero.co.jp/
 - [`@d-zero/a11y-checklist`](./packages/@d-zero/a11y-checklist/)を元にしたチェックリストを公開します
 - [Astro](https://astro.build/)と[Svelte](https://svelte.dev/)を利用しています
 
