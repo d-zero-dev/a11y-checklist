@@ -1,0 +1,36 @@
+{
+	"name": "@d-zero/db-wcag",
+	"version": "1.0.0-alpha.0",
+	"description": "Database of WCAG Success Criterions",
+	"author": "D-ZERO",
+	"license": "MIT",
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://opensource.org/licenses/MIT"
+		},
+		{
+			"type": "W3C Document License - 2023",
+			"url": "https://www.w3.org/copyright/document-license-2023/"
+		}
+	],
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./src/index.js",
+			"types": "./src/index.d.ts"
+		},
+		"./types": {
+			"types": "./src/types.d.ts"
+		},
+		"./json": "./src/sc.json"
+	},
+	"files": [
+		"src"
+	],
+	"scripts": {}
+}
