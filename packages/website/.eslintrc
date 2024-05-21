@@ -1,0 +1,35 @@
+{
+	"extends": [
+		"@d-zero/eslint-config",
+		"plugin:astro/recommended",
+		"plugin:svelte/recommended"
+	],
+	"overrides": [
+		{
+			"files": ["*.astro"],
+			"parser": "astro-eslint-parser",
+			"parserOptions": {
+				"parser": "@typescript-eslint/parser",
+				"extraFileExtensions": [".astro"]
+			},
+			"rules": {
+				"import/default": 0,
+				"import/namespace": 0,
+				"import/no-named-as-default-member": 0,
+				"unicorn/filename-case": 0,
+				"unicorn/prefer-module": 0,
+				"unicorn/text-encoding-identifier-case": 0
+			}
+		},
+		{
+			"files": ["*.svelte"],
+			"parser": "svelte-eslint-parser",
+			"parserOptions": {
+				"parser": "@typescript-eslint/parser"
+			},
+			"rules": {
+				"unicorn/filename-case": 0
+			}
+		}
+	]
+}

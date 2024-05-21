@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const { target } = Astro.params;
+
+if (!target) {
+	return Astro.redirect('/404');
+}
+
+export async function getStaticPaths() {
+	return [{ params: { target: 'image' } }];
+}
+---
+
+<Layout title={`${target}`}>
+	<h1>{target}</h1>
+</Layout>

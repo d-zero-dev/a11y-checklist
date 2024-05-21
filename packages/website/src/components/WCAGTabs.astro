@@ -1,0 +1,73 @@
+---
+import type { ScNumber } from '@d-zero/a11y-checklist';
+
+import WCAGSCItem from '@/components/WCAGSCItem.astro';
+import WCAGTabsContainer from '@/components/WCAGTabs.svelte';
+import { wcagSc } from '@/libs/wcag';
+
+interface Props {
+	sc: ScNumber[];
+}
+
+const { sc } = Astro.props;
+
+const wcag20 = sc
+	.map((sc) => wcagSc(sc, '2.0'))
+	.filter((sc): sc is NonNullable<typeof sc> => !!sc);
+const wcag21 = sc
+	.map((sc) => wcagSc(sc, '2.1'))
+	.filter((sc): sc is NonNullable<typeof sc> => !!sc);
+const wcag22 = sc
+	.map((sc) => wcagSc(sc, '2.2'))
+	.filter((sc): sc is NonNullable<typeof sc> => !!sc);
+---
+
+<WCAGTabsContainer client:load>
+	<div slot="wcag20">
+		{
+			wcag20.length > 0 ? (
+				<ul>
+					{wcag20.map((sc) => (
+						<li>
+							<WCAGSCItem sc={sc} />
+						</li>
+					))}
+				</ul>
+			) : (
+				<p>なし</p>
+			)
+		}
+	</div>
+
+	<div slot="wcag21">
+		{
+			wcag21.length > 0 ? (
+				<ul>
+					{wcag21.map((sc) => (
+						<li>
+							<WCAGSCItem sc={sc} />
+						</li>
+					))}
+				</ul>
+			) : (
+				<p>なし</p>
+			)
+		}
+	</div>
+
+	<div slot="wcag22">
+		{
+			wcag22.length > 0 ? (
+				<ul>
+					{wcag22.map((sc) => (
+						<li>
+							<WCAGSCItem sc={sc} />
+						</li>
+					))}
+				</ul>
+			) : (
+				<p>なし</p>
+			)
+		}
+	</div>
+</WCAGTabsContainer>

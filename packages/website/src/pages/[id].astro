@@ -1,0 +1,100 @@
+---
+import Article from '@/components/Article.astro';
+import Phases from '@/components/Phases.astro';
+import SectionLevel2 from '@/components/SectionLevel2.astro';
+import WCAGTabs from '@/components/WCAGTabs.astro';
+import Layout from '@/layouts/Layout.astro';
+import { getCheckItem } from '@/libs/check-item';
+import { getChecklist } from '@/libs/checklist';
+import { fetchAmeba } from '@/libs/fetch-ameba';
+import { getTitleFromUrl } from '@/libs/get-title-from-url';
+import { listingText } from '@/utils/listing-text';
+
+const { id } = Astro.params;
+
+const item = await getCheckItem(id);
+const autocheck = {
+	yes: '可能',
+	no: '不可能',
+	mixed: '一部可能',
+};
+
+const ameba = await fetchAmeba();
+
+if (!item) {
+	return Astro.redirect('/404');
+}
+
+export async function getStaticPaths() {
+	return getChecklist().map((item) => ({
+		params: { id: item.id.toLowerCase() },
+	}));
+}
+---
+
+<Layout title={`${item.id}: ${item.title}`}>
+	<h1 class="text-h1 font-bold my-8"><code>{item.id}</code> {item.title}</h1>
+	<div class="text-xs p-4 bg-gray-50 my-8">
+		<a href="/">◀ チェック項目一覧</a>
+	</div>
+	<Article>
+		<section>
+			<dl
+				class="grid grid-cols-[auto_1fr] [&>dd]:flex [&>dd]:before:content-[':'] [&>dd]:before:mx-1">
+				<dt>遵守度</dt>
+				<dd>{item.level}</dd>
+				<dt>自動チェック</dt>
+				<dd>{autocheck[item.autocheck]}</dd>
+				<dt>対象</dt>
+				<dd>{listingText(item.target)}</dd>
+				<dt>フェーズ</dt>
+				<dd><Phases phases={item.phases} /></dd>
+			</dl>
+		</section>
+		{
+			item.check ? (
+				<SectionLevel2 heading="チェックの内容">
+					<div set:html={item.check} />
+				</SectionLevel2>
+			) : null
+		}
+		{
+			item.checkDevOps ? (
+				<SectionLevel2 heading="制作時の注意点">
+					<div set:html={item.checkDevOps} />
+				</SectionLevel2>
+			) : null
+		}
+		<SectionLevel2 heading="関連するWCAG達成基準">
+			<WCAGTabs sc={item.sc} />
+		</SectionLevel2>
+		<SectionLevel2 heading="参考リンク">
+			<ul>
+				<!-- Ameba Accessibility Guidelines -->
+				{
+					item.sc.map((sc) => {
+						const amebaSc = ameba.get(sc);
+						if (!amebaSc) {
+							return null;
+						}
+						return (
+							<li>
+								<a href={amebaSc.url}>{amebaSc.title}</a>
+							</li>
+						);
+					})
+				}
+				<!-- Other references -->
+				{
+					item.reference
+						? item.reference.map((reference) => (
+								<li>
+									<a href={reference}>{getTitleFromUrl(reference)}</a>
+								</li>
+							))
+						: null
+				}
+			</ul>
+		</SectionLevel2>
+	</Article>
+</Layout>

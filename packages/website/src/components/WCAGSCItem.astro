@@ -1,0 +1,16 @@
+---
+import type { SC } from '@d-zero/db-wcag/types';
+
+interface Props {
+	sc: {
+		en: SC;
+		ja: SC;
+	};
+}
+
+const { sc } = Astro.props;
+---
+
+<div>
+	<a href={sc.ja.understanding}>{sc.ja.id} {sc.ja.title} (レベル{sc.ja.level})</a>
+</div>

@@ -1,0 +1,42 @@
+---
+import type { A11YChecklist } from '@d-zero/a11y-checklist';
+
+import a11YChecklist from '@d-zero/a11y-checklist/json';
+
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="アクセシビリティチェックリスト | 株式会社ディーゼロ">
+	<h1 class="text-h1 font-bold">アクセシビリティチェックリスト</h1>
+	<table class="border-collapse [&_th]:border-2 [&_th]:p-2 [&_td]:border-2 [&_td]:p-2">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>内容</th>
+				<th>遵守度</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				(a11YChecklist as A11YChecklist).map((item) => (
+					<tr>
+						<th class="text-left">
+							<a href={`ids/${item.id?.toLowerCase()}`}>{item.id}</a>
+						</th>
+						<td>
+							<a
+								href={item.id?.toLowerCase()}
+								data-astro-prefetch
+								class="text-blue-700 underline underline-offset-4">
+								{item.title}
+							</a>
+						</td>
+						<td>
+							<a href={`levels/${item.level?.toLowerCase()}`}>{item.level}</a>
+						</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+</Layout>

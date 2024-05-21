@@ -1,0 +1,30 @@
+---
+import type { Phase } from '@d-zero/a11y-checklist';
+
+interface Props {
+	phases: Phase[];
+}
+
+const { phases } = Astro.props;
+
+const steps: ReadonlySet<Phase> = new Set([
+	'要件定義',
+	'システム設計',
+	'情報設計',
+	'UIデザイン',
+	'フロントエンド実装',
+	'バックエンド実装',
+]);
+---
+
+<ol class="flex justify-start flex-wrap">
+	{
+		[...steps].map((step) => (
+			<li
+				aria-hidden={!phases.includes(step)}
+				class="group flex before:content-['>'] before:mx-2 before:opacity-60 first:before:content-none">
+				<span class="group-aria-hidden:opacity-10">{step}</span>
+			</li>
+		))
+	}
+</ol>

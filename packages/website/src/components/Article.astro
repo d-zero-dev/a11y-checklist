@@ -1,0 +1,57 @@
+<article class="max-w-3xl mx-auto">
+	<slot />
+</article>
+
+<style is:global>
+	article {
+		a {
+			@apply text-blue-700 underline underline-offset-4;
+		}
+
+		h3 {
+			@apply text-h3 font-bold mt-4;
+		}
+
+		h4 {
+			@apply text-h4 font-bold mt-4;
+		}
+
+		h5 {
+			@apply text-h5 font-bold mt-4;
+		}
+
+		p {
+			@apply my-4;
+		}
+
+		ul {
+			@apply list-disc my-4 ml-6;
+		}
+
+		li {
+			@apply my-1;
+		}
+
+		li > ul {
+			@apply my-0;
+		}
+
+		strong {
+			@apply font-bold text-pink-800;
+		}
+
+		pre {
+			@apply p-4 border-2 mt-4 overflow-auto;
+		}
+
+		:where(p, ul) {
+			code {
+				@apply text-sm font-mono bg-slate-50 text-pink-700 px-1 py-[0.125em] rounded;
+			}
+
+			a:has(code) {
+				@apply text-inherit no-underline border-b-[1px] border-dotted border-gray-400 pb-[0.125em] cursor-help;
+			}
+		}
+	}
+</style>
