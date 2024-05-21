@@ -1,0 +1,16 @@
+{
+	"import": ["@d-zero/cspell-config"],
+	"ignorePaths": ["packages/@d-zero/db-wcag/src/sc.json"],
+	"words": [
+		//
+		"waic",
+		"wcag",
+		"wcagsc",
+
+		//
+		"rehype",
+		"rgossiaux",
+		"shiki",
+		"shikijs"
+	]
+}

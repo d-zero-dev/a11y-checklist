@@ -1,0 +1,61 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently \"yarn dev:website\" \"yarn dev:checklist\"",
+		"dev:website": "cd packages/website && yarn dev",
+		"dev:checklist": "cd packages/@d-zero/a11y-checklist && yarn watch",
+		"update": "lerna run update",
+		"build": "lerna run build",
+		"clean": "lerna run clean",
+		"test": "vitest run",
+		"lint": "run-s lint:eslint lint:prettier lint:markuplint lint:textlint lint:cspell",
+		"lint:cspell": "cspell --no-progress --show-suggestions \"{*,packages/{@d-zero/*,updater,website}/{*,src/**/*}}/\"",
+		"lint:eslint": "eslint --fix \"{*,packages/{@d-zero/*,updater,website}/{*,src/**/*}}.{js,cjs,mjs,jsx,ts,cts,mts,tsx,astro,svelte}\"",
+		"lint:prettier": "prettier --write \"{*,packages/{@d-zero/*,updater,website}/{*,src/**/*}}.{md,yaml,json,js,cjs,mjs,jsx,ts,cts,mts,tsx,astro,svelte}\"",
+		"lint:markuplint": "markuplint \"packages/website/src/**/*.{html,astro,svelte}\"",
+		"lint:textlint": "textlint --fix \"./{*,packages/{@d-zero/*,updater,website}/{*,src/**/*}}.{md}\"",
+		"release": "lerna publish --exact --conventional-commits --conventional-graduate",
+		"release:next": "lerna publish --dist-tag next --exact --force-publish --conventional-commits --conventional-prerelease --preid alpha",
+		"prerelease": "yarn build; yarn test",
+		"prepare": "husky",
+		"commit": "cz",
+		"co": "cz",
+		"up": "yarn upgrade-interactive --latest"
+	},
+	"workspaces": [
+		"packages/@d-zero/*",
+		"packages/updater",
+		"packages/website"
+	],
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-customizable"
+		},
+		"cz-customizable": {
+			"config": "./node_modules/@d-zero/cz-config/ui"
+		}
+	},
+	"devDependencies": {
+		"@d-zero/commitlint-config": "5.0.0-alpha.28",
+		"@d-zero/linters": "5.0.0-alpha.28",
+		"@d-zero/tsconfig": "0.2.0",
+		"@markuplint/astro-parser": "4.6.2",
+		"@markuplint/svelte-parser": "4.6.2",
+		"@markuplint/svelte-spec": "4.5.2",
+		"concurrently": "8.2.2",
+		"eslint-plugin-astro": "1.2.0",
+		"eslint-plugin-svelte": "^2.39.0",
+		"husky": "9.0.11",
+		"lerna": "8.1.3",
+		"npm-run-all2": "6.2.0",
+		"prettier-plugin-astro": "0.13.0",
+		"prettier-plugin-svelte": "3.2.3",
+		"typescript": "5.4.5",
+		"vitest": "1.6.0"
+	},
+	"volta": {
+		"node": "22.2.0",
+		"yarn": "1.22.22"
+	}
+}

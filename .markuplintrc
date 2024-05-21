@@ -1,0 +1,10 @@
+{
+	"extends": ["@d-zero/markuplint-config/base"],
+	"parser": {
+		"\\.astro$": "@markuplint/astro-parser",
+		"\\.svelte$": "@markuplint/svelte-parser"
+	},
+	"specs": {
+		"\\.svelte$": "@markuplint/svelte-spec"
+	}
+}

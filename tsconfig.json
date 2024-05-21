@@ -1,0 +1,6 @@
+{
+	"extends": ["@d-zero/tsconfig"],
+	"compilerOptions": {
+		"checkJs": false
+	}
+}

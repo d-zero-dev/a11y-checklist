@@ -1,0 +1,22 @@
+{
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.validate": ["javascript", "typescript"],
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"yaml.format.enable": true,
+	"yaml.completion": true,
+	"yaml.validate": true,
+	"yaml.hover": true,
+	"yaml.schemas": {
+		"./packages/@d-zero/a11y-checklist/schema.json": ["list.yaml"]
+	},
+	"tailwindCSS.experimental.configFile": "packages/website/tailwind.config.mjs",
+	"github.copilot.enable": {
+		"*": true,
+		"markdown": true,
+		"dotenv": false
+	}
+}
