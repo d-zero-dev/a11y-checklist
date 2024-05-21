@@ -1,0 +1,197 @@
+- id: N001
+  title: 画像の代替テキストは過不足なく画像と同等の目的を果たす情報をもっている
+  check: |-
+    代替テキストの「同等の目的」は、デザインの意図やコンテキストによって異なります。デザイナーやコンテンツ制作者とのコミュニケーションにより確認します。
+    画像が代替テキスト（アクセシブルな名前）をもっているかは[N010]で確認します。
+
+    目的によって、もしくはコンテキストによって不要と判断される場合もあります。
+    その場合はアクセシビリティツリーに公開されていないことを確認[N011]した上で、このチェックは合格とします。
+  checkDevOps: |-
+    ワイヤーフレーム・デザインカンプで画像を挿入する時点で代替テキストは考慮します。Figmaのコメント機能を使って代替テキストを記載しておくことが望まれます。空でよい場合もコメントで明記しておくことが重要です。
+
+    代替テキストは「同等の目的」を達成させるために必要な情報を提供します。画像を採用する意図、コンテキストを元に決定します。
+
+    目的によって、もしくはコンテキストによって不要と判断される場合もあります。
+  level: MUST
+  sc: [1.1.1]
+  autocheck: no
+  phases: [情報設計, UIデザイン]
+  target: [画像]
+  reference:
+    - https://a11y-guidelines.freee.co.jp/categories/image.html
+    - https://www.w3.org/WAI/tutorials/images/decision-tree/
+    - https://yuugop.com/articles/practicalaccessiblehtml/pah01.html
+    - https://sawada-std-design.com/works/readable-na/readable-na-alt-decision-tree-20181105.pdf
+    - https://www.codegrid.net/series/2023-alt-text/
+
+- id: N010
+  title: 情報をもっている画像は、画像としてアクセシブルな名前をもっている
+  check: |-
+    画像が情報をもっている場合、要素は画像としてアクセシブルな名前をもっているか確認します。
+
+    - DevToolsからアクセシビリティツリーに公開されていることを確認します
+      - ARIA Roleがrole/imgもしくはrole/imageであることを確認します
+      - アクセシブルな名前が設定されていることを確認します
+        - アクセシブルな名前が適切かどうかは[N001]で確認します
+    - スクリーンリーダーで「画像」とアクセシブルな名前が読み上げられることを確認します
+
+    ### アクセシブルな名前の実装
+
+    アクセシブルな名前は以下などの方法にて実装されます。どの方法が使われているかを確認する必要がある場合は参考にしてください。
+
+    - html/img要素の`alt`属性
+    - html/area要素の`alt`属性
+    - html/input[type=image]要素の`alt`属性
+    - html/svg|svg要素とhtml/svg|title要素
+    - その他の要素
+      - aria-label属性（ARIA Roleによっては無効なので注意）
+      - aria-labelledby属性（ARIA Roleによっては無効なので注意）
+    - 背景画像など場合
+      - 内包するVisibilityHiddenな要素
+    - 疑似要素
+      - css/contentプロパティ
+      - css/contentプロパティの代替テキスト値
+  checkDevOps: |-
+    [WIP]書きかけ
+  level: MUST
+  sc: [1.1.1]
+  autocheck: mixed
+  phases: [フロントエンド実装]
+  target: [画像]
+  reference:
+    - https://a11y-guidelines.freee.co.jp/categories/image.html
+
+- id: N011
+  title: 情報をもっていない画像がアクセシビリティツリーに公開されていない
+  check: |-
+    画像が情報をもっていない場合、アクセシビリティツリーに公開されていないことを確認します。
+
+    - DevToolsからアクセシビリティツリーに公開されていないことを確認します
+    - スクリーンリーダーで読み上げられないことを確認します
+    - スクリーンリーダーカーソルが要素に移動できないことを確認します
+
+    画像が情報をもっている場合は、代替テキストの内容を確認します → [N001][N010]
+  checkDevOps: |-
+    画像をアクセシビリティツリー公開**しない**方法は以下などがあります。
+
+    - html/img要素の`alt`属性を空にする（`alt=""`）
+    - ARIA Roleをrole/presentationもしくはrole/noneを設定する
+    - aria-hidden属性を`true`にする
+    - CSSで背景画像（css/background-image）にする
+
+    背景画像にしない場合、html/img要素では`alt=""`を、html/svg|svg要素ではaria-hiddenを推奨します。
+
+  level: MUST
+  sc: [1.1.1]
+  autocheck: no
+  phases: [フロントエンド実装]
+  target: [画像]
+  reference:
+    - https://a11y-guidelines.freee.co.jp/categories/image.html
+
+- id: N012
+  title: 情報をもつ背景画像のある要素はアクセシブルな名前をもっているか、もしくは可視ラベルが隣接している
+  check: |-
+    背景画像をもつ要素が情報を持つ場合、アクセシブルな名前をもたせるか、もしくは可視ラベルを隣接させます。
+
+    - 意味をもつかどうか、アクセシブルな名前の内容自体は[N001]で確認します
+    - 可視ラベルが隣接している場合は逆にアクセシブルな名前がないこと[N011]を確認します
+  checkDevOps: |-
+    基本的に意味をもつ（アクセシブルな名前が必要な）画像は背景画像にするべきではありません。
+
+    - メディアクエリーによる変更が必要 → picture要素と併せて使ってください
+    - 親要素のサイズに合わせて縦横比が変わる可能性がある → object-fitプロパティを使ってください
+  level: MUST
+  sc: [1.1.1]
+  autocheck: no
+  phases: [フロントエンド実装]
+  target: [画像]
+  reference:
+    - https://a11y-guidelines.freee.co.jp/categories/image.html
+
+- id: N020
+  title: 可視ラベルとアイコンが連続する場合に、アイコンはアクセシブルな名前をもたない
+  check: |-
+    [WIP]書きかけ
+  checkDevOps: |-
+    [WIP]書きかけ
+  level: MUST
+  sc: [1.1.1]
+  autocheck: yes
+  phases: [フロントエンド実装]
+  target: [画像]
+
+- id: N030
+  title: 機能を表す画像はアクセシブルな名前もしくは状態を提供している
+  check: |-
+    ボタンなどの機能を表す画像（右矢印、下矢印、アイコンなど）が機能（リンク、ページ内リンク、ディスクロージャ、別タブで開くなど）を表すときに、アクセシブルな名前もしくは説明もしくは状態で機能を伝えているかを確認します。
+
+    ここでいう「機能を表す画像」は、以下のようなものを指します。
+    - リンクを表す右矢印（→）
+    - ページ内リンクを表す下矢印（↓）
+    - ディスクロージャの開閉状態を表す上下矢印（↑/↓）や三角形（▲/▼）、プラスマイナス（+/-）
+    - 別タブで開くことを表す外部リンクアイコン（ウインドウアイコン）
+
+    これらの機能や状態（開いている/閉じている、など）を伝えるために、以下の手段を用います。
+    - アクセシブルな名前（内容は[N001]で確認します）
+    - 説明
+      - aria-describedby属性
+      - 隣接するテキスト
+    - 状態
+      - aria-expanded属性
+      - aria-pressed属性
+      - aria-selected属性
+      - ほか
+
+    ### 例
+
+    ```html
+    <a href="path/to/external" target="_blank">
+      <span>外部リンク先のタイトル</span>
+      <!-- アイコンの代替テキストに、このアイコンが担う「別タブで開けること」がわかる表現を記載します -->
+      <img src="icon/external-link.svg" alt="別タブ">
+    </a>
+    ```
+
+    ```html
+    <details>
+      <summary>
+        〇〇の詳細
+        <!-- 暗黙のARIAプロパティを介して開いている/閉じているが伝わるので特別な実装は不要 -->
+      </summary>
+      <p>詳細な内容</p>
+    </details>
+    ```
+  checkDevOps: |-
+    [WIP]書きかけ
+  level: MUST
+  sc: [1.1.1, 4.1.2]
+  autocheck: no
+  phases: [UIデザイン, フロントエンド実装]
+  target: [インタラクティブ要素]
+
+- id: N040
+  title: アクセシブルな名前がコンテキストと異なる言語になっていない
+  check: |-
+    [WIP]書きかけ
+  checkDevOps: |-
+    [WIP]書きかけ
+  level: MUST
+  sc: [1.1.1, 3.1.2]
+  autocheck: yes
+  phases: [フロントエンド実装]
+  target: [画像]
+
+- id: N100
+  title: システムで設定できる画像には代替テキストを設定できる
+  check: |-
+    [WIP]書きかけ
+  checkDevOps: |-
+    [WIP]書きかけ
+  level: SHOULD
+  sc: [1.1.1]
+  autocheck: yes
+  phases: [要件定義, システム設計, バックエンド実装]
+  target: [画像]
+  reference:
+    - https://waic.jp/translations/ATAG20/#gl_a21

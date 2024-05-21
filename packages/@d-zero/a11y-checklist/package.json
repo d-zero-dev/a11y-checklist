@@ -1,0 +1,39 @@
+{
+	"name": "@d-zero/a11y-checklist",
+	"version": "1.0.0-alpha.0",
+	"description": "Database of WCAG Success Criterions",
+	"author": "D-ZERO",
+	"license": "CC-BY-NC-SA-4.0",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./src/index.js"
+		},
+		"./json": {
+			"import": "./dist/list.json"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "run-s build:ts build:yaml build:schema",
+		"build:ts": "tsc",
+		"build:yaml": "js-yaml ./src/list.yaml > ./dist/list.json",
+		"build:schema": "json2ts ./schema.json > ./src/types.ts",
+		"watch": "npm-watch"
+	},
+	"watch": {
+		"build:yaml": "src/list.yaml",
+		"build:schema": "schema.json"
+	},
+	"devDependencies": {
+		"js-yaml": "4.1.0",
+		"json-schema-to-typescript": "14.0.4",
+		"npm-watch": "0.13.0"
+	}
+}

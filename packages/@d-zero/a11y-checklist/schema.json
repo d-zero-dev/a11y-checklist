@@ -1,0 +1,143 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "a11yChecklist",
+	"definitions": {
+		"a11yCheckItem": {
+			"type": "object",
+			"required": [
+				"id",
+				"title",
+				"check",
+				"checkDevOps",
+				"level",
+				"sc",
+				"autocheck",
+				"phases",
+				"target"
+			],
+			"additionalProperties": false,
+			"properties": {
+				"id": {
+					"$ref": "#/definitions/id"
+				},
+				"title": {
+					"type": "string"
+				},
+				"check": {
+					"type": "string"
+				},
+				"checkDevOps": {
+					"type": "string"
+				},
+				"level": {
+					"$ref": "#/definitions/level"
+				},
+				"autocheck": {
+					"type": "string",
+					"enum": ["yes", "no", "mixed"]
+				},
+				"sc": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/scNumber"
+					}
+				},
+				"dependencies": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"$ref": "#/definitions/id"
+					}
+				},
+				"phases": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"$ref": "#/definitions/phase"
+					}
+				},
+				"target": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string",
+						"enum": ["ページ全体", "画像", "インタラクティブ要素"]
+					}
+				},
+				"reason": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					}
+				},
+				"spec": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string",
+						"enum": ["html", "aria1.2", "aria1.3"]
+					}
+				},
+				"reference": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string",
+						"format": "uri"
+					}
+				},
+				"exception": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					}
+				},
+				"keywords": {
+					"type": "array",
+					"minLength": 1,
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		"id": {
+			"title": "識別ID",
+			"description": "N: Name (アクセシブルな名前)\nM: Media (メディア)\nC: Code (コード)",
+			"type": "string",
+			"pattern": "^[N|M|C]\\d{3}$"
+		},
+		"level": {
+			"type": "string",
+			"enum": ["MUST", "SHOULD", "MAY"]
+		},
+		"phase": {
+			"type": "string",
+			"enum": [
+				"要件定義",
+				"システム設計",
+				"情報設計",
+				"UIデザイン",
+				"フロントエンド実装",
+				"バックエンド実装"
+			]
+		},
+		"scNumber": {
+			"$ref": "../db-wcag/schema.json#/definitions/number"
+		}
+	},
+	"type": "array",
+	"items": {
+		"$ref": "#/definitions/a11yCheckItem"
+	}
+}
