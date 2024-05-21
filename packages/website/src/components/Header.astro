@@ -1,0 +1,27 @@
+---
+import HeaderTitle from './HeaderTitle.astro';
+
+interface Props {
+	isHome?: boolean | undefined;
+}
+
+const { isHome = false } = Astro.props;
+---
+
+<header class="border-b-2">
+	<div class="container max-w-6xl mx-auto px-8 py-8 flex">
+		<a href="/" class="font-bold">
+			{
+				isHome ? (
+					<h1>
+						<HeaderTitle />
+					</h1>
+				) : (
+					<div>
+						<HeaderTitle />
+					</div>
+				)
+			}
+		</a>
+	</div>
+</header>

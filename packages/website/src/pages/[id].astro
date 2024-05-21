@@ -34,9 +34,6 @@ export async function getStaticPaths() {
 
 <Layout title={`${item.id}: ${item.title}`}>
 	<h1 class="text-h1 font-bold my-8"><code>{item.id}</code> {item.title}</h1>
-	<div class="text-xs p-4 bg-gray-50 my-8">
-		<a href="/">◀ チェック項目一覧</a>
-	</div>
 	<Article>
 		<section>
 			<dl
