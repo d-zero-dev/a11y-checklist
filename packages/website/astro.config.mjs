@@ -1,6 +1,3 @@
-import fs from 'node:fs';
-import path from 'node:path';
-
 import svelte from '@astrojs/svelte';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
