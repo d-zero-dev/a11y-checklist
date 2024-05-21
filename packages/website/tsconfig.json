@@ -5,7 +5,8 @@
 			"@/components/*": ["./src/components/*"],
 			"@/layouts/*": ["./src/layouts/*"],
 			"@/libs/*": ["./src/libs/*"],
-			"@/utils/*": ["./src/utils/*"]
+			"@/utils/*": ["./src/utils/*"],
+			"@/images/*": ["./src/images/*"]
 		}
 	}
 }

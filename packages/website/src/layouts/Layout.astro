@@ -1,4 +1,6 @@
 ---
+import Footer from '@/components/Footer.astro';
+
 interface Props {
 	title: string;
 	description?: string;
@@ -8,7 +10,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ja">
+<html lang="ja" class="h-full">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -16,9 +18,16 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
-	<body>
-		<div class="container max-w-5xl mx-auto">
-			<slot />
+	<body class="h-full">
+		<div class="h-full grid grid-rows-[1fr_auto]">
+			<div>
+				<div class="container max-w-5xl mx-auto">
+					<slot />
+				</div>
+			</div>
+			<div>
+				<Footer />
+			</div>
 		</div>
 	</body>
 </html>
