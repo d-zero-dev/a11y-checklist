@@ -4,6 +4,7 @@ import Phases from '@/components/Phases.astro';
 import SectionLevel2 from '@/components/SectionLevel2.astro';
 import WCAGTabs from '@/components/WCAGTabs.astro';
 import Layout from '@/layouts/Layout.astro';
+import { autocheck } from '@/libs/autocheck';
 import { getCheckItem } from '@/libs/check-item';
 import { getChecklist } from '@/libs/checklist';
 import { fetchAmeba } from '@/libs/fetch-ameba';
@@ -13,11 +14,6 @@ import { listingText } from '@/utils/listing-text';
 const { id } = Astro.params;
 
 const item = await getCheckItem(id);
-const autocheck = {
-	yes: '可能',
-	no: '不可能',
-	mixed: '一部可能',
-};
 
 const ameba = await fetchAmeba();
 

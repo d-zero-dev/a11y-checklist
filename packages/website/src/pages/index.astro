@@ -5,6 +5,7 @@ import a11YChecklist from '@d-zero/a11y-checklist/json';
 
 import Hint from '@/components/Hint.svelte';
 import Layout from '@/layouts/Layout.astro';
+import { autocheck } from '@/libs/autocheck';
 
 /**
  * およそのチェック項目の合計数
@@ -27,6 +28,7 @@ const TOTAL = 208;
 						>
 					</div>
 				</th>
+				<th>自動チェック</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -48,6 +50,7 @@ const TOTAL = 208;
 							{/* <a href={`levels/${item.level?.toLowerCase()}`}>{item.level}</a> */}
 							{item.level}
 						</td>
+						<td>{autocheck[item.autocheck]}</td>
 					</tr>
 				))
 			}
