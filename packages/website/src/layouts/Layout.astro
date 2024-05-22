@@ -6,9 +6,10 @@ interface Props {
 	title: string;
 	description?: string;
 	isHome?: boolean;
+	wide?: boolean;
 }
 
-const { title, description, isHome } = Astro.props;
+const { title, description, isHome, wide } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,8 +24,8 @@ const { title, description, isHome } = Astro.props;
 	<body class="h-full">
 		<div class="h-full grid grid-rows-[auto_1fr_auto]">
 			<Header isHome={isHome} />
-			<div>
-				<div class="container max-w-5xl mx-auto">
+			<div data-wide={wide} class="group">
+				<div class="container max-w-6xl group-data-[wide]:max-w-fit mx-auto">
 					<slot />
 				</div>
 			</div>
