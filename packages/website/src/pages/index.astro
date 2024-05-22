@@ -29,6 +29,7 @@ const TOTAL = 208;
 					</div>
 				</th>
 				<th>自動チェック</th>
+				<th>対象</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -51,6 +52,13 @@ const TOTAL = 208;
 							{item.level}
 						</td>
 						<td>{autocheck[item.autocheck]}</td>
+						<td>
+							<ul class="flex gap-1">
+								{item.target.map((target) => (
+									<li class="bg-slate-100 px-2 py-1 rounded">{target}</li>
+								))}
+							</ul>
+						</td>
 					</tr>
 				))
 			}
