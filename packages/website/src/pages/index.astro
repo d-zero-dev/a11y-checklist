@@ -3,6 +3,7 @@ import type { A11YChecklist } from '@d-zero/a11y-checklist';
 
 import a11YChecklist from '@d-zero/a11y-checklist/json';
 
+import Hint from '@/components/Hint.svelte';
 import Layout from '@/layouts/Layout.astro';
 
 /**
@@ -18,7 +19,14 @@ const TOTAL = 208;
 			<tr>
 				<th>ID</th>
 				<th>内容</th>
-				<th>遵守度</th>
+				<th>
+					<div class="flex place-items-center">
+						<span class="mr-1">遵守度</span>
+						<Hint client:idle name="遵守度とは"
+							>ディーゼロ社の規定遵守度です。WCAGの適合レベルとは相関はありません。</Hint
+						>
+					</div>
+				</th>
 			</tr>
 		</thead>
 		<tbody>
