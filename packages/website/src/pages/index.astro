@@ -4,6 +4,11 @@ import type { A11YChecklist } from '@d-zero/a11y-checklist';
 import a11YChecklist from '@d-zero/a11y-checklist/json';
 
 import Layout from '@/layouts/Layout.astro';
+
+/**
+ * およそのチェック項目の合計数
+ */
+const TOTAL = 208;
 ---
 
 <Layout title="アクセシビリティチェックリスト | 株式会社ディーゼロ" isHome>
@@ -39,4 +44,10 @@ import Layout from '@/layouts/Layout.astro';
 			}
 		</tbody>
 	</table>
+	<div class="mt-8 text-center">
+		<p><strong>現在項目追加中</strong></p>
+		<p>
+			未登録の残り: {TOTAL - a11YChecklist.length}項目
+		</p>
+	</div>
 </Layout>
