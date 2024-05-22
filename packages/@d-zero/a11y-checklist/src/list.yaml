@@ -178,7 +178,7 @@
     [WIP]書きかけ
   level: MUST
   sc: [1.1.1, 3.1.2]
-  autocheck: yes
+  autocheck: no
   phases: [フロントエンド実装]
   target: [画像]
 
@@ -190,7 +190,7 @@
     [WIP]書きかけ
   level: SHOULD
   sc: [1.1.1]
-  autocheck: yes
+  autocheck: no
   phases: [要件定義, システム設計, バックエンド実装]
   target: [画像]
   reference:
