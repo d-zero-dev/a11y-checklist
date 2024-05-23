@@ -7,6 +7,9 @@
 	"specs": {
 		"\\.svelte$": "@markuplint/svelte-spec"
 	},
+	"rules": {
+		"character-reference": false
+	},
 	"nodeRules": [
 		{
 			"selector": "h1",
