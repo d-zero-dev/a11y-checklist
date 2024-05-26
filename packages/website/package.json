@@ -17,7 +17,7 @@
 		"@rgossiaux/svelte-headlessui": "2.0.0",
 		"@shikijs/rehype": "1.6.0",
 		"astro": "4.9.1",
-		"jsdom": "24.0.0",
+		"jsdom": "24.1.0",
 		"pdfjs-dist": "4.2.67",
 		"rehype-stringify": "10.0.0",
 		"remark-parse": "11.0.0",
