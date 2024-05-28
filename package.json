@@ -42,7 +42,7 @@
 		"@d-zero/tsconfig": "0.2.0",
 		"@markuplint/astro-parser": "4.6.3",
 		"@markuplint/svelte-parser": "4.6.3",
-		"@markuplint/svelte-spec": "4.5.2",
+		"@markuplint/svelte-spec": "4.5.3",
 		"concurrently": "8.2.2",
 		"eslint-plugin-astro": "1.2.0",
 		"eslint-plugin-svelte": "2.39.0",
