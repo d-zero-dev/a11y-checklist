@@ -1904,12 +1904,12 @@
     "@markuplint/parser-utils" "4.6.3"
     svelte "4.2.17"
 
-"@markuplint/svelte-spec@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.5.2.tgz#bf1d96db90719664a3f3d6d7abce1d0bd774c7fe"
-  integrity sha512-oWUoqGNTD5gDrdgMzimWOSRqg0mx1vj/CqOnAVpoHZbc98ygzX/+sQMYNYJ5lr8ardxH/mV/h3Jo2isLXRj5eg==
+"@markuplint/svelte-spec@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.5.3.tgz#bfa9a9babac076e02ef6ba51dfcb1aed4f087e1f"
+  integrity sha512-mNBuHmiONvsBkS4MidpcZg69ux/RQMDbICu4QIywHbam2RWPbw7MGhK839yaJlgT5SD74GpJIN4lXnUrMDjUMQ==
   dependencies:
-    "@markuplint/ml-spec" "4.6.0"
+    "@markuplint/ml-spec" "4.6.1"
 
 "@markuplint/types@4.5.0":
   version "4.5.0"
