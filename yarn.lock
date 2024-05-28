@@ -1724,6 +1724,16 @@
     parse5 "7.1.2"
     type-fest "4.18.2"
 
+"@markuplint/html-parser@4.6.3":
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.3.tgz#5ec0ce5b0b14dc416d9ab6b383add7f82c49efc1"
+  integrity sha512-aZFzlWRDSZhiJT+PfRKBdTpk7garomQ5PZPjyCRc98uw3klmX/8IppOysqQTvLjNsKbW3JoNHqFqARTY6MgPxA==
+  dependencies:
+    "@markuplint/ml-ast" "4.4.0"
+    "@markuplint/parser-utils" "4.6.3"
+    parse5 "7.1.2"
+    type-fest "4.18.3"
+
 "@markuplint/html-spec@4.7.2":
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/@markuplint/html-spec/-/html-spec-4.7.2.tgz#5f5458ee6b560dec0fc44387f1fff24d76d1cb20"
@@ -1884,15 +1894,15 @@
   dependencies:
     html-entities "2.5.2"
 
-"@markuplint/svelte-parser@4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.6.2.tgz#b1f1ee70c3c9d4a6e278afe20f80effbfb47a0d1"
-  integrity sha512-NEh3x4SyY0HeAazKDx/AKTiAJhPjbzT2V7WQArcEufKUBQhsfUbYB15WBwrQu0nMMmDeXtr0rIm2AvSSxggfAA==
+"@markuplint/svelte-parser@4.6.3":
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.6.3.tgz#aea32b7f2b36ea764a5319cea81f88bf49767081"
+  integrity sha512-gv3ssJWvjZIKA33rY8yc3UHq8XSl0xKWK7lNEsboHENf2h6aWP3p+gdSQowZjoAAnyXp5C+jBBeWTzpGI8qdnw==
   dependencies:
-    "@markuplint/html-parser" "4.6.2"
-    "@markuplint/ml-ast" "4.3.1"
-    "@markuplint/parser-utils" "4.6.2"
-    svelte "4.2.16"
+    "@markuplint/html-parser" "4.6.3"
+    "@markuplint/ml-ast" "4.4.0"
+    "@markuplint/parser-utils" "4.6.3"
+    svelte "4.2.17"
 
 "@markuplint/svelte-spec@4.5.2":
   version "4.5.2"
@@ -12116,26 +12126,6 @@ svelte2tsx@^0.6.27:
   dependencies:
     dedent-js "^1.0.1"
     pascal-case "^3.1.1"
-
-svelte@4.2.16:
-  version "4.2.16"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-4.2.16.tgz#f94f3f3ea13f98292ce54f596786d0ce0872ee8b"
-  integrity sha512-mQwHpqHD2PmFcCyHaZ7XiTqposaLvJ75WpYcyY5/ce3qxbYtwQpZ+M7ZKP+2CG5U6kfnBZBpPLyofhlE6ROrnQ==
-  dependencies:
-    "@ampproject/remapping" "^2.2.1"
-    "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@jridgewell/trace-mapping" "^0.3.18"
-    "@types/estree" "^1.0.1"
-    acorn "^8.9.0"
-    aria-query "^5.3.0"
-    axobject-query "^4.0.0"
-    code-red "^1.0.3"
-    css-tree "^2.3.1"
-    estree-walker "^3.0.3"
-    is-reference "^3.0.1"
-    locate-character "^3.0.0"
-    magic-string "^0.30.4"
-    periscopic "^3.1.0"
 
 svelte@4.2.17:
   version "4.2.17"
