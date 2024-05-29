@@ -18,7 +18,7 @@
 		"@shikijs/rehype": "1.6.1",
 		"astro": "4.9.2",
 		"jsdom": "24.1.0",
-		"pdfjs-dist": "4.2.67",
+		"pdfjs-dist": "4.3.136",
 		"rehype-stringify": "10.0.0",
 		"remark-parse": "11.0.0",
 		"remark-rehype": "11.1.0",
