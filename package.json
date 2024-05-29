@@ -37,7 +37,7 @@
 		}
 	},
 	"devDependencies": {
-		"@d-zero/commitlint-config": "5.0.0-alpha.32",
+		"@d-zero/commitlint-config": "5.0.0-alpha.33",
 		"@d-zero/linters": "5.0.0-alpha.32",
 		"@d-zero/tsconfig": "0.2.0",
 		"@markuplint/astro-parser": "4.6.3",
