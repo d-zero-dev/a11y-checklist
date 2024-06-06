@@ -12,11 +12,11 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "0.7.0",
-		"@astrojs/svelte": "5.4.0",
+		"@astrojs/svelte": "5.5.0",
 		"@astrojs/tailwind": "5.1.0",
 		"@rgossiaux/svelte-headlessui": "2.0.0",
 		"@shikijs/rehype": "1.6.2",
-		"astro": "4.9.3",
+		"astro": "4.10.0",
 		"jsdom": "24.1.0",
 		"pdfjs-dist": "4.3.136",
 		"rehype-stringify": "10.0.0",
