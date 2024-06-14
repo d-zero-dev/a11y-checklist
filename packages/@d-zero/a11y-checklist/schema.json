@@ -33,8 +33,7 @@
 					"$ref": "#/definitions/level"
 				},
 				"autocheck": {
-					"type": "string",
-					"enum": ["yes", "no", "mixed"]
+					"$ref": "#/definitions/autoCheckFeasibility"
 				},
 				"sc": {
 					"type": "array",
@@ -134,6 +133,10 @@
 		},
 		"scNumber": {
 			"$ref": "../db-wcag/schema.json#/definitions/number"
+		},
+		"autoCheckFeasibility": {
+			"type": "string",
+			"enum": ["yes", "no", "mixed"]
 		}
 	},
 	"type": "array",

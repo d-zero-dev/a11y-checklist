@@ -12,6 +12,7 @@
  */
 export type ID = string;
 export type Level = 'MUST' | 'SHOULD' | 'MAY';
+export type AutoCheckFeasibility = 'yes' | 'no' | 'mixed';
 export type ScNumber =
 	| '1.1.1'
 	| '1.2.1'
@@ -115,7 +116,7 @@ export interface A11YCheckItem {
 	check: string;
 	checkDevOps: string;
 	level: Level;
-	autocheck: 'yes' | 'no' | 'mixed';
+	autocheck: AutoCheckFeasibility;
 	sc: ScNumber[];
 	dependencies?: ID[];
 	phases: Phase[];
