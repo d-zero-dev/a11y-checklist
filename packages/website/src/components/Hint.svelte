@@ -38,11 +38,11 @@
 	}
 </script>
 
-<div class="flex items-center">
+<div class="flex place-items-center">
 	<button
 		bind:this={trigger}
 		on:click={onClick}
-		class="hint-trigger bg-blue-400 border-2 border-blue-800 text-white rounded-full text-[0.7rem] font-bold m-0 p-0 w-5 h-5 flex items-center justify-center leading-none">
+		class="hint-trigger bg-blue-900 text-white rounded-full text-[0.7rem] font-bold m-0 p-0 w-5 h-5 flex items-center justify-center leading-none">
 		<span class="sr-only">{name}</span>
 		?
 	</button>

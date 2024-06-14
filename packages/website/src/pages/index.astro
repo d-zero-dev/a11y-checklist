@@ -16,13 +16,13 @@ const TOTAL = 208;
 
 <Layout title="アクセシビリティチェックリスト | 株式会社ディーゼロ" isHome wide>
 	<table
-		class="border-collapse mt-16 w-full [&_th]:border-2 [&_th]:p-2 [&_td]:border-2 [&_td]:p-2">
+		class="@container border-collapse mt-16 w-full [&_th]:py-2 [&_th]:px-8 [&_td]:py-2 [&_td]:px-8 [&_th]:border-b [&_td]:border-b">
 		<thead>
-			<tr>
+			<tr class="[&>th]:text-nowrap">
 				<th>ID</th>
 				<th>内容</th>
 				<th>
-					<div class="flex place-items-center">
+					<div class="flex place-content-center">
 						<span class="mr-1">遵守度</span>
 						<Hint client:idle name="遵守度とは"
 							>ディーゼロ社の規定遵守度です。WCAGの適合レベルとは相関はありません。</Hint
@@ -37,8 +37,10 @@ const TOTAL = 208;
 			{
 				(a11YChecklist as A11YChecklist).map((item) => (
 					<tr>
-						<th class="text-left">
-							<a href={`ids/${item.id?.toLowerCase()}`}>{item.id}</a>
+						<th class="text-left font-mono font-normal">
+							<a href={`ids/${item.id?.toLowerCase()}`} class="text-nowrap">
+								{item.id}
+							</a>
 						</th>
 						<td>
 							<a
@@ -59,7 +61,7 @@ const TOTAL = 208;
 							</div>
 						</td>
 						<td>
-							<ul class="flex gap-1">
+							<ul class="flex gap-1 flex-wrap">
 								{item.target.map((target) => (
 									<li class="bg-slate-100 px-2 py-1 rounded">{target}</li>
 								))}
@@ -70,10 +72,12 @@ const TOTAL = 208;
 			}
 		</tbody>
 	</table>
-	<div class="mt-8 text-center">
-		<p><strong>現在項目追加中</strong></p>
-		<p>
-			未登録の残り: {TOTAL - a11YChecklist.length}項目
-		</p>
+	<div class="mt-8 flex place-content-center">
+		<div class="bg-slate-100 px-8 py-4 rounded-md text-center">
+			<p><strong>現在項目追加中</strong></p>
+			<p>
+				未登録の残り: {TOTAL - a11YChecklist.length}項目
+			</p>
+		</div>
 	</div>
 </Layout>

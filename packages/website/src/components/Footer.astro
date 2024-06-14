@@ -7,14 +7,8 @@ import LogoPorta11y from '@/images/logo-porta11y.svg';
 ---
 
 <footer class="bg-slate-100">
-	<div class="container max-w-6xl mx-auto px-8 py-16">
+	<div class="container max-w-6xl mx-auto px-8 py-16 flex place-content-between">
 		<div class="flex justify-between items-center">
-			<div class="flex justify-start items-center">
-				<span class="mr-3 font-bold">Powered by</span>
-				<a href="https://porta11y.d-zero.co.jp"
-					><Image src={LogoPorta11y} alt="Porta11y" class="h-8 w-auto max-w-none" /></a
-				>
-			</div>
 			<ul class="flex gap-4">
 				<li>
 					<a href="https://github.com/d-zero-dev/a11y-checklist"
@@ -28,7 +22,13 @@ import LogoPorta11y from '@/images/logo-porta11y.svg';
 				</li>
 			</ul>
 		</div>
-		<div class="flex place-content-center mt-16">
+		<div class="flex flex-col place-items-end gap-4">
+			<div class="flex justify-start items-center">
+				<span class="mr-3 font-bold text-sm">Provided by</span>
+				<a href="https://porta11y.d-zero.co.jp"
+					><Image src={LogoPorta11y} alt="Porta11y" class="h-7 w-auto max-w-none" /></a
+				>
+			</div>
 			<p class="text-gray-800 text-sm">
 				©{new Date().getFullYear()}
 				<a href="https://www.d-zero.co.jp">D-ZERO Co., Ltd.</a>
