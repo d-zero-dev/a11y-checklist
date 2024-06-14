@@ -4,9 +4,9 @@ import type { A11YChecklist } from '@d-zero/a11y-checklist';
 import a11YChecklist from '@d-zero/a11y-checklist/json';
 
 import Hint from '@/components/Hint.svelte';
+import LabelAutoCheck from '@/components/LabelAutoCheck.astro';
 import LabelLevel from '@/components/LabelLevel.astro';
 import Layout from '@/layouts/Layout.astro';
-import { autocheck } from '@/libs/autocheck';
 
 /**
  * およそのチェック項目の合計数
@@ -53,7 +53,11 @@ const TOTAL = 208;
 								<LabelLevel level={item.level} />
 							</div>
 						</td>
-						<td>{autocheck[item.autocheck]}</td>
+						<td>
+							<div class="w-full h-full [&>*]:block">
+								<LabelAutoCheck feasibility={item.autocheck} />
+							</div>
+						</td>
 						<td>
 							<ul class="flex gap-1">
 								{item.target.map((target) => (

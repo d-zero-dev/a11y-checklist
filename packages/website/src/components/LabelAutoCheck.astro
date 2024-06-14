@@ -1,0 +1,23 @@
+---
+import type { AutoCheckFeasibility } from '@d-zero/a11y-checklist';
+
+import { autocheck } from '@/libs/autocheck';
+
+interface Props {
+	feasibility: AutoCheckFeasibility;
+}
+
+const { feasibility } = Astro.props;
+
+const feasibilities = {
+	yes: 'bg-autocheck-yes-100',
+	no: 'bg-autocheck-no-100',
+	mixed: 'bg-autocheck-mixed-100',
+};
+
+const label = autocheck[feasibility];
+---
+
+<span class={`${feasibilities[feasibility]} text-black px-4 py-1 rounded text-center`}>
+	{label}
+</span>
