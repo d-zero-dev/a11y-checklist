@@ -1,3 +1,5 @@
+import tailwindContainerQueries from '@tailwindcss/container-queries';
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,astro,svelte}'],
@@ -13,5 +15,5 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [tailwindContainerQueries],
 };
