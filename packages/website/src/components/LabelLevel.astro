@@ -1,0 +1,19 @@
+---
+import type { Level } from '@d-zero/a11y-checklist';
+
+interface Props {
+	level: Level;
+}
+
+const { level } = Astro.props;
+
+const levels = {
+	MUST: 'bg-level-must-700',
+	SHOULD: 'bg-level-should-700',
+	MAY: 'bg-level-may-700',
+};
+---
+
+<span class={`${levels[level]} text-white px-4 py-1 rounded text-center`}>
+	{level}
+</span>

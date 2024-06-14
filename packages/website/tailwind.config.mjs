@@ -1,4 +1,5 @@
 import tailwindContainerQueries from '@tailwindcss/container-queries';
+import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,6 +13,11 @@ export default {
 				h4: 'calc(1em * 4 / 5)',
 				h5: 'calc(1em * 4 / 6)',
 				h6: 'calc(1em * 4 / 7)',
+			},
+			colors: {
+				'level-must': colors.emerald,
+				'level-should': colors.sky,
+				'level-may': colors.pink,
 			},
 		},
 	},

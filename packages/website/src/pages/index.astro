@@ -4,6 +4,7 @@ import type { A11YChecklist } from '@d-zero/a11y-checklist';
 import a11YChecklist from '@d-zero/a11y-checklist/json';
 
 import Hint from '@/components/Hint.svelte';
+import LabelLevel from '@/components/LabelLevel.astro';
 import Layout from '@/layouts/Layout.astro';
 import { autocheck } from '@/libs/autocheck';
 
@@ -48,8 +49,9 @@ const TOTAL = 208;
 							</a>
 						</td>
 						<td>
-							{/* <a href={`levels/${item.level?.toLowerCase()}`}>{item.level}</a> */}
-							{item.level}
+							<div class="w-full h-full [&>*]:block">
+								<LabelLevel level={item.level} />
+							</div>
 						</td>
 						<td>{autocheck[item.autocheck]}</td>
 						<td>
