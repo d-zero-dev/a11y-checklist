@@ -2311,24 +2311,29 @@
   resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.6.4.tgz#06bbb38f2cac7ee587be68586a9a9c0768a06194"
   integrity sha512-WTU9rzZae1p2v6LOxMf6LhtmZOkIHYYW160IuahUyJy7YXPPjyWZLR1ag+SgD22ZMxZtz1gfU6Tccc8t0Il/XA==
 
-"@shikijs/rehype@1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@shikijs/rehype/-/rehype-1.6.4.tgz#e02eedbbf7134d33db05b9d86bc7a3d83f56dfc5"
-  integrity sha512-rQFnJKb9uJm3lr6DDKoVBSnWcocHGIqfKM591NSDawMxfhm+gPGhgLP6/EX1N2v0qNHQeuzBuunkApWVQbVTCg==
+"@shikijs/core@1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.6.5.tgz#0b28cdab48ee977a792b4944cefbb6f6d10ff712"
+  integrity sha512-XcQYt6e4L61ruAxHiL3Xg1DL/XkWWjzDdeckB/DtN8jAxoAU+bcxsV6DetC8NafHpL4YpGhxy9iXF0ND/u6HmA==
+
+"@shikijs/rehype@1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@shikijs/rehype/-/rehype-1.6.5.tgz#deba1ef9f774657d0b8336989424ecb353ceaa5f"
+  integrity sha512-tv3WzBXvRI3VD9dBg1wdbRcXXg19mSGsNuJ2ZDlJK7DgRThUs++OgUqYosvBJZlraqFthXSr5tuCok9ffZaqQw==
   dependencies:
-    "@shikijs/transformers" "1.6.4"
+    "@shikijs/transformers" "1.6.5"
     "@types/hast" "^3.0.4"
     hast-util-to-string "^3.0.0"
-    shiki "1.6.4"
+    shiki "1.6.5"
     unified "^11.0.4"
     unist-util-visit "^5.0.0"
 
-"@shikijs/transformers@1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@shikijs/transformers/-/transformers-1.6.4.tgz#bc0097ec0a2a85093effa137a993512a5609285b"
-  integrity sha512-NqDt7gUg3ayVBnsipT/KoL1pqsVbsvT/2cB0pb5SG2q72qjAv9Lb5OP99pL//BMmI+sMTo+TeARntklyBu4mZQ==
+"@shikijs/transformers@1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@shikijs/transformers/-/transformers-1.6.5.tgz#688ba57639ff0dd76ec6776744699dd1987e7b7e"
+  integrity sha512-iuKa1uQtPQEe5vgCsXIb162b/3imRiAIdoF5IqafrTWL1uqZUpipfPjWZPuAAszOzYU//yIYRbhUk8reHVXA/w==
   dependencies:
-    shiki "1.6.4"
+    shiki "1.6.5"
 
 "@sigstore/bundle@^1.1.0":
   version "1.1.0"
@@ -11432,12 +11437,12 @@ shell-quote@^1.7.3, shell-quote@^1.8.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
 
-shiki@1.6.4, shiki@^1.6.3:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.6.4.tgz#7413d7425732fb603e0eafa33aeb7cd6a1b0da74"
-  integrity sha512-X88chM7w8jnadoZtjPTi5ahCJx9pc9f8GfEkZAEYUTlcUZIEw2D/RY86HI/LkkE7Nj8TQWkiBfaFTJ3VJT6ESg==
+shiki@1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.6.5.tgz#b29369381706bd3979b670aae478c76494f29509"
+  integrity sha512-iFzypldJG0zeyRHKAhaSGCf+YWXpMMyUyOrCVFBFKGGdF5vrB6jbd66/SQljxV20aSrVZEAQwUto/hhuNi/CIg==
   dependencies:
-    "@shikijs/core" "1.6.4"
+    "@shikijs/core" "1.6.5"
 
 shiki@^1.1.2:
   version "1.6.3"
@@ -11445,6 +11450,13 @@ shiki@^1.1.2:
   integrity sha512-lE1/YGlzFY0hQSyEfsZj18xGrTWxyhFQkaiILALqTBZPbJeYFWpbUhlmTGPOupYB/qC+H6sV4UznJzcEh3WMHQ==
   dependencies:
     "@shikijs/core" "1.6.3"
+
+shiki@^1.6.3:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.6.4.tgz#7413d7425732fb603e0eafa33aeb7cd6a1b0da74"
+  integrity sha512-X88chM7w8jnadoZtjPTi5ahCJx9pc9f8GfEkZAEYUTlcUZIEw2D/RY86HI/LkkE7Nj8TQWkiBfaFTJ3VJT6ESg==
+  dependencies:
+    "@shikijs/core" "1.6.4"
 
 side-channel@^1.0.4:
   version "1.0.6"
