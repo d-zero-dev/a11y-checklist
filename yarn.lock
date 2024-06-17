@@ -5343,10 +5343,10 @@ eslint-plugin-sort-class-members@1.20.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-sort-class-members/-/eslint-plugin-sort-class-members-1.20.0.tgz#88ea3d53b2ffb319dba1049c28e20797685a0b9e"
   integrity sha512-xNaik4GQ/pRwd1soIVI28HEXZbrWoLR5krau2+E8YcHj7N09UviPg5mYhf/rELG29bIFJdXDOFJazN90+luMOw==
 
-eslint-plugin-svelte@2.39.4:
-  version "2.39.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte/-/eslint-plugin-svelte-2.39.4.tgz#540e24fdd50e327785d38086faa32f83cad81dc0"
-  integrity sha512-MAuMNCOQAfCNaOlJfzC/ZnhQi2YwKdQvjYTFs99QIMWTMhN8nIatwQf8X50kCoSfQb7Q8dadGu8QUOOMoCCMTA==
+eslint-plugin-svelte@2.40.0:
+  version "2.40.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte/-/eslint-plugin-svelte-2.40.0.tgz#31ce5c717060178c96b9390c75093e0c656cddaa"
+  integrity sha512-JuOzmfVaMeEkBASL7smHu3tIU4D9rWkHuRNV+zm/5zgAwiZVvxrXM7TcfIOS+U7VXOr4uCZuE+kZTVTzS0IE+Q==
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.0"
     "@jridgewell/sourcemap-codec" "^1.4.15"
@@ -5358,7 +5358,7 @@ eslint-plugin-svelte@2.39.4:
     postcss-safe-parser "^6.0.0"
     postcss-selector-parser "^6.1.0"
     semver "^7.6.2"
-    svelte-eslint-parser "^0.38.0"
+    svelte-eslint-parser "^0.39.1"
 
 eslint-plugin-unicorn@53.0.0:
   version "53.0.0"
@@ -11906,10 +11906,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte-eslint-parser@^0.38.0:
-  version "0.38.0"
-  resolved "https://registry.yarnpkg.com/svelte-eslint-parser/-/svelte-eslint-parser-0.38.0.tgz#a75e54c31531d44cbef3edbbb6a57a8a546abf31"
-  integrity sha512-5qyDMW19cqafbRua5xLKI4wHfHapDx1emu93Vl3Po+2qcV9mSXL/XhmgBN23S9ddE4SQ7vrF7V6Q2a+VMfmUQg==
+svelte-eslint-parser@^0.39.1:
+  version "0.39.1"
+  resolved "https://registry.yarnpkg.com/svelte-eslint-parser/-/svelte-eslint-parser-0.39.1.tgz#b6e4fa86635e1f1b0a4c1b75dce8ccbcb78d0107"
+  integrity sha512-0VR9gq2TOdSrJW94Qf2F3XrzXRQomXQtRZGFS3FEUr3G4J8DcpqXfBF1HJyOa3dACyGsKiBbOPF56pBgYaqXBA==
   dependencies:
     eslint-scope "^7.2.2"
     eslint-visitor-keys "^3.4.3"
