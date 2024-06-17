@@ -103,10 +103,10 @@
   dependencies:
     prismjs "^1.29.0"
 
-"@astrojs/svelte@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/svelte/-/svelte-5.5.0.tgz#92b67de149f460bd6fd5e254078b83573cdec71b"
-  integrity sha512-ooNFv4gWcc+IQnjgnijI6qTzXOPn7MBacSBqFd3EEQ9GDd2lnu87lqKEO8M5bXnQfsqsChg3E1gOsJ862mbCRA==
+"@astrojs/svelte@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/svelte/-/svelte-5.6.0.tgz#b747a05e4641f71b23165e3046368c46bc55d999"
+  integrity sha512-rdHBlqMQE6UOA1ySF1t3sdb6pf44yP8Dd0TqxGO0yR4HAgbtKtW8XToJ3mQ1PmuRmf5fisH9xzt3EEx7NAQuZg==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^3.1.1"
     svelte2tsx "^0.7.9"
@@ -2191,6 +2191,11 @@
   resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.6.5.tgz#0b28cdab48ee977a792b4944cefbb6f6d10ff712"
   integrity sha512-XcQYt6e4L61ruAxHiL3Xg1DL/XkWWjzDdeckB/DtN8jAxoAU+bcxsV6DetC8NafHpL4YpGhxy9iXF0ND/u6HmA==
 
+"@shikijs/core@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.7.0.tgz#fe4f276519ff224719c6373d66b29fc5ee771abd"
+  integrity sha512-O6j27b7dGmJbR3mjwh/aHH8Ld+GQvA0OQsNO43wKWnqbAae3AYXrhFyScHGX8hXZD6vX2ngjzDFkZY5srtIJbQ==
+
 "@shikijs/rehype@1.6.5":
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/@shikijs/rehype/-/rehype-1.6.5.tgz#deba1ef9f774657d0b8336989424ecb353ceaa5f"
@@ -3020,7 +3025,7 @@ acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.10.0, acorn@^8.11.0, acorn@^8.11.3, acorn@^8.8.2, acorn@^8.9.0:
+acorn@^8.10.0, acorn@^8.11.0, acorn@^8.11.3, acorn@^8.12.0, acorn@^8.8.2, acorn@^8.9.0:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.0.tgz#1627bfa2e058148036133b8d9b51a700663c294c"
   integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==
@@ -3357,10 +3362,10 @@ astro-eslint-parser@1.0.2, astro-eslint-parser@^1.0.2:
     is-glob "^4.0.3"
     semver "^7.3.8"
 
-astro@4.10.2:
-  version "4.10.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-4.10.2.tgz#c9508ac5f8a17f7708d590cf0a1813a06f6b578c"
-  integrity sha512-SBdkoOanPsxKlKVU4uu/XG0G7NYAFoqmfBtq9SPMJ34B7Hr1MxVdEugERs8IwYN6UaxdDVcqA++9PvH6Onq2cg==
+astro@4.10.3:
+  version "4.10.3"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.10.3.tgz#d551786179375274e93b56a774034e519ac238d2"
+  integrity sha512-TWCJM+Vg+y0UoEz/H75rfp/u2N8yxeQQ2UrU9+fMcbjlzQJtGGDq3ApdundqPZgAuCryRuJnrKytStMZCFnlvQ==
   dependencies:
     "@astrojs/compiler" "^2.8.0"
     "@astrojs/internal-helpers" "0.4.0"
@@ -3374,7 +3379,7 @@ astro@4.10.2:
     "@babel/types" "^7.24.7"
     "@types/babel__core" "^7.20.5"
     "@types/cookie" "^0.6.0"
-    acorn "^8.11.3"
+    acorn "^8.12.0"
     aria-query "^5.3.0"
     axobject-query "^4.0.0"
     boxen "^7.1.1"
@@ -3413,13 +3418,13 @@ astro@4.10.2:
     rehype "^13.0.1"
     resolve "^1.22.8"
     semver "^7.6.2"
-    shiki "^1.6.3"
+    shiki "^1.6.5"
     string-width "^7.1.0"
     strip-ansi "^7.1.0"
     tsconfck "^3.1.0"
     unist-util-visit "^5.0.0"
     vfile "^6.0.1"
-    vite "^5.2.13"
+    vite "^5.3.1"
     vitefu "^0.2.5"
     which-pm "^2.2.0"
     yargs-parser "^21.1.1"
@@ -11260,12 +11265,19 @@ shell-quote@^1.7.3, shell-quote@^1.8.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
 
-shiki@1.6.5, shiki@^1.1.2, shiki@^1.6.3:
+shiki@1.6.5, shiki@^1.1.2:
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.6.5.tgz#b29369381706bd3979b670aae478c76494f29509"
   integrity sha512-iFzypldJG0zeyRHKAhaSGCf+YWXpMMyUyOrCVFBFKGGdF5vrB6jbd66/SQljxV20aSrVZEAQwUto/hhuNi/CIg==
   dependencies:
     "@shikijs/core" "1.6.5"
+
+shiki@^1.6.5:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.7.0.tgz#de220937e9f91ba695fb2b23b4f4ddc9a393b320"
+  integrity sha512-H5pMn4JA7ayx8H0qOz1k2qANq6mZVCMl1gKLK6kWIrv1s2Ial4EmD4s4jE8QB5Dw03d/oCQUxc24sotuyR5byA==
+  dependencies:
+    "@shikijs/core" "1.7.0"
 
 side-channel@^1.0.4:
   version "1.0.6"
@@ -13113,7 +13125,7 @@ vite-node@1.6.0:
     picocolors "^1.0.0"
     vite "^5.0.0"
 
-vite@^5.0.0, vite@^5.2.13:
+vite@^5.0.0, vite@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.3.1.tgz#bb2ca6b5fd7483249d3e86b25026e27ba8a663e6"
   integrity sha512-XBmSKRLXLxiaPYamLv3/hnP/KXDai1NDexN0FpkTaZXTfycHvkRHoenpgl/fvuK/kPbB6xAgoyiryAhQNxYmAQ==
