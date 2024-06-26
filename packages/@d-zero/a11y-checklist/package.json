@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"js-yaml": "4.1.0",
-		"json-schema-to-typescript": "14.0.5",
+		"json-schema-to-typescript": "14.1.0",
 		"npm-watch": "0.13.0"
 	}
 }
