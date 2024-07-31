@@ -52,7 +52,7 @@
 		"prettier-plugin-astro": "0.14.1",
 		"prettier-plugin-svelte": "3.2.6",
 		"typescript": "5.5.4",
-		"vitest": "2.0.4"
+		"vitest": "2.0.5"
 	},
 	"volta": {
 		"node": "22.5.1",
