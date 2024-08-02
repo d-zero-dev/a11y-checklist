@@ -3420,10 +3420,10 @@ astro-eslint-parser@1.0.2, astro-eslint-parser@^1.0.2:
     is-glob "^4.0.3"
     semver "^7.3.8"
 
-astro@4.13.0:
-  version "4.13.0"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-4.13.0.tgz#cf12d7feb3f8b70440e8f1129177a2b0cc820ac4"
-  integrity sha512-tExzJeK1rh7OdVipi1e8S6koVgjQyveSy5fNEc/4Tit4GKl/olMTUEHepZSAKR7VCyiEC/hi3rjaV3t4lxR3tA==
+astro@4.13.1:
+  version "4.13.1"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.13.1.tgz#cb8f5e7763284f9d6829b8414c00bbdc6d8ca9c8"
+  integrity sha512-VnMjAc+ykFsIVjgbu9Mt/EA1fMIcPMXbU89h3ATwGOzSIKDsQH72bDgfJkWiwk6u0OE90GeP5EPhAT28Twf9oA==
   dependencies:
     "@astrojs/compiler" "^2.10.0"
     "@astrojs/internal-helpers" "0.4.1"
@@ -3441,7 +3441,6 @@ astro@4.13.0:
     aria-query "^5.3.0"
     axobject-query "^4.1.0"
     boxen "7.1.1"
-    chokidar "^3.6.0"
     ci-info "^4.0.0"
     clsx "^2.1.1"
     common-ancestor-path "^1.0.1"
@@ -3917,7 +3916,7 @@ check-error@^2.1.1:
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-2.1.1.tgz#87eb876ae71ee388fa0471fe423f494be1d96ccc"
   integrity sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==
 
-chokidar@3.6.0, chokidar@^3.5.2, chokidar@^3.5.3, chokidar@^3.6.0:
+chokidar@3.6.0, chokidar@^3.5.2, chokidar@^3.5.3:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
   integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==
