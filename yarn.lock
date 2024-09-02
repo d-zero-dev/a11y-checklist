@@ -1719,16 +1719,6 @@
     jsonc "2.0.0"
     minimatch "10.0.1"
 
-"@markuplint/html-parser@4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.5.tgz#6d268deaa2fc43688ed14f5d0823a2bd29a74174"
-  integrity sha512-uY4eCtYybrAvDLUymqYNhS2pCdd8iwlIZWESafVcRUQvb579vwqcM9FubC+Zh43LyJNfhrkN9ReUzWSjie+1fA==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.2"
-    "@markuplint/parser-utils" "4.6.5"
-    parse5 "7.1.2"
-    type-fest "4.20.1"
-
 "@markuplint/html-parser@4.6.6":
   version "4.6.6"
   resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.6.tgz#1841ef72ad749de5dbba99831a833baa137d0c75"
@@ -1817,20 +1807,6 @@
     is-plain-object "5.0.0"
     type-fest "4.26.0"
 
-"@markuplint/parser-utils@4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.6.5.tgz#564f098974995051cb923d3019442e008067dd22"
-  integrity sha512-AxZA1Akw/ebUQPWO9HwHhPmUMMmT3nCqlQKxiISHFSXSOcHhld62GgCnBVMPXKGsdivhdDCYJjos7o9mlH8uYg==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.2"
-    "@markuplint/ml-spec" "4.6.3"
-    "@markuplint/types" "4.5.3"
-    "@types/uuid" "10.0.0"
-    debug "4.3.5"
-    espree "10.1.0"
-    type-fest "4.20.1"
-    uuid "10.0.0"
-
 "@markuplint/parser-utils@4.6.6":
   version "4.6.6"
   resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.6.6.tgz#c2156a41f5b53cf68d1c32faf514a21d4c5e0bca"
@@ -1899,15 +1875,15 @@
   dependencies:
     html-entities "2.5.2"
 
-"@markuplint/svelte-parser@4.6.5":
-  version "4.6.5"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.6.5.tgz#32dee6d3f8ce14fd92d8f06680476eca7118ce68"
-  integrity sha512-1VroPsOofMa7iX8Vcg8ZHDoQ7bI4r9Jen1JBFRWZfx3PEfaqitcvUjZVI5cbFqVrygB5qJ1QKZS+0Ldh0gnbRw==
+"@markuplint/svelte-parser@4.6.6":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.6.6.tgz#679e0716ac2626d2905b8dc41680fd1596faa609"
+  integrity sha512-cSZE3PrDkTx0lPGhpGn/jVVax6SH0izaGdPI6efrNAuyovytEh91jGQiDv9YGArqbgTfmsXSHeeC1qHBgm2kvA==
   dependencies:
-    "@markuplint/html-parser" "4.6.5"
-    "@markuplint/ml-ast" "4.4.2"
-    "@markuplint/parser-utils" "4.6.5"
-    svelte "4.2.18"
+    "@markuplint/html-parser" "4.6.6"
+    "@markuplint/ml-ast" "4.4.3"
+    "@markuplint/parser-utils" "4.6.6"
+    svelte "4.2.19"
 
 "@markuplint/svelte-spec@4.5.5":
   version "4.5.5"
@@ -11982,26 +11958,6 @@ svelte2tsx@^0.7.13:
   dependencies:
     dedent-js "^1.0.1"
     pascal-case "^3.1.1"
-
-svelte@4.2.18:
-  version "4.2.18"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-4.2.18.tgz#33dbce74e83eb6dcc54dbea25f9758b1d8e8bb78"
-  integrity sha512-d0FdzYIiAePqRJEb90WlJDkjUEx42xhivxN8muUBmfZnP+tzUgz12DJ2hRJi8sIHCME7jeK1PTMgKPSfTd8JrA==
-  dependencies:
-    "@ampproject/remapping" "^2.2.1"
-    "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@jridgewell/trace-mapping" "^0.3.18"
-    "@types/estree" "^1.0.1"
-    acorn "^8.9.0"
-    aria-query "^5.3.0"
-    axobject-query "^4.0.0"
-    code-red "^1.0.3"
-    css-tree "^2.3.1"
-    estree-walker "^3.0.3"
-    is-reference "^3.0.1"
-    locate-character "^3.0.0"
-    magic-string "^0.30.4"
-    periscopic "^3.1.0"
 
 svelte@4.2.19:
   version "4.2.19"
