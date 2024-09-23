@@ -41,7 +41,7 @@
 		"@d-zero/linters": "5.0.0-alpha.42",
 		"@d-zero/tsconfig": "0.3.1",
 		"@markuplint/astro-parser": "4.6.7",
-		"@markuplint/svelte-parser": "4.6.6",
+		"@markuplint/svelte-parser": "4.6.7",
 		"@markuplint/svelte-spec": "4.5.6",
 		"concurrently": "8.2.2",
 		"eslint-plugin-astro": "1.2.4",
