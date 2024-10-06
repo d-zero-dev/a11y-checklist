@@ -15,7 +15,7 @@
 		"@astrojs/svelte": "5.7.0",
 		"@astrojs/tailwind": "5.1.0",
 		"@rgossiaux/svelte-headlessui": "2.0.0",
-		"@shikijs/rehype": "1.21.0",
+		"@shikijs/rehype": "1.21.1",
 		"@tailwindcss/container-queries": "0.1.1",
 		"astro": "4.13.4",
 		"jsdom": "24.1.3",
