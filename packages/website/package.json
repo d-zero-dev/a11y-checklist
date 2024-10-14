@@ -12,8 +12,8 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "0.9.1",
-		"@astrojs/svelte": "5.7.0",
-		"@astrojs/tailwind": "5.1.0",
+		"@astrojs/svelte": "5.7.2",
+		"@astrojs/tailwind": "5.1.2",
 		"@rgossiaux/svelte-headlessui": "2.0.0",
 		"@shikijs/rehype": "1.22.0",
 		"@tailwindcss/container-queries": "0.1.1",
