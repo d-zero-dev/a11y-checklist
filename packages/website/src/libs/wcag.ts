@@ -1,8 +1,7 @@
 import type { ScNumber } from '@d-zero/a11y-checklist';
-import type { SC, WCAGVersion } from '@d-zero/db-wcag/types';
+import type { SC, WCAGVersion } from '@d-zero/db-wcag';
 
-const mod = await import('@d-zero/db-wcag/json');
-const wcag = mod.default;
+import { wcag } from '@d-zero/db-wcag';
 
 type SCMultilingual = {
 	en: SC;
@@ -14,7 +13,7 @@ export function wcagSc(scNumber: ScNumber, version: WCAGVersion): SCMultilingual
 		return null;
 	}
 
-	const ver = wcag[`wcag_${version}`];
+	const ver = wcag.successCriterions[`wcag_${version}`];
 
 	// @ts-ignore
 	const ja: SC | null = ver.ja[scNumber] ?? null;
