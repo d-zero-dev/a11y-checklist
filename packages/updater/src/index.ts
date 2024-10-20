@@ -3,6 +3,8 @@ import type { WCAGVersion, SC, Locale } from '@d-zero/db-wcag/types';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+import { format, resolveConfig } from 'prettier';
+
 import { fetchSC, fetchSC_v2_0 } from './fetch-sc.js';
 import { links } from './links.js';
 
@@ -24,11 +26,12 @@ const sc = {
 	},
 } as const as Record<`wcag_${WCAGVersion}`, Record<Locale, Record<string, SC>>>;
 
-await fs.writeFile(
-	path.resolve(packageDir, 'src', 'sc.json'),
-	JSON.stringify(sc, null, '\t') + '\n',
-	'utf8',
-);
+const scFilePath = path.resolve(packageDir, 'src', 'sc.ts');
+const options = await resolveConfig(scFilePath);
+const tsSC = `export const sc = ${JSON.stringify(sc, null, '\t')} as const;`;
+const tsSCFormatted = await format(tsSC, { ...options, parser: 'typescript' });
+
+await fs.writeFile(scFilePath, tsSCFormatted, 'utf8');
 
 const numbers = new Set(
 	Object.values(sc).flatMap((v) => {
