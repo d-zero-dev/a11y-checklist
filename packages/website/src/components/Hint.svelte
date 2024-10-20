@@ -10,7 +10,7 @@
 
 	onMount(() => {
 		switchUsePopover();
-		window.matchMedia(mediaQuery).addEventListener('change', switchUsePopover);
+		globalThis.matchMedia(mediaQuery).addEventListener('change', switchUsePopover);
 	});
 
 	function switchUsePopover() {
@@ -27,7 +27,8 @@
 
 	function usePopover() {
 		return (
-			window.CSS.supports('inset-area', 'top') && window.matchMedia(mediaQuery).matches
+			globalThis.CSS.supports('inset-area', 'top') &&
+			globalThis.matchMedia(mediaQuery).matches
 		);
 	}
 
