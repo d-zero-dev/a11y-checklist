@@ -1,6 +1,6 @@
 {
 	"name": "@d-zero/a11y-checklist",
-	"version": "1.0.0-alpha.0",
+	"version": "1.0.0-alpha.1",
 	"description": "Database of WCAG Success Criterions",
 	"author": "D-ZERO",
 	"license": "CC-BY-NC-SA-4.0",

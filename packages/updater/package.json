@@ -1,6 +1,6 @@
 {
 	"name": "updater",
-	"version": "1.0.0-alpha.0",
+	"version": "1.0.0-alpha.1",
 	"description": "DB Updater with scraping and API",
 	"author": "D-ZERO",
 	"license": "MIT",
@@ -10,7 +10,7 @@
 		"update": "tsx src/index.ts"
 	},
 	"devDependencies": {
-		"@d-zero/db-wcag": "1.0.0-alpha.0",
+		"@d-zero/db-wcag": "1.0.0-alpha.1",
 		"@types/html-minifier-terser": "7.0.2",
 		"@types/jsdom": "21.1.7",
 		"html-minifier-terser": "7.2.0",
