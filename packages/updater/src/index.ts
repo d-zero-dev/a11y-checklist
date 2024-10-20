@@ -1,4 +1,4 @@
-import type { WCAGVersion, SC, Locale } from '@d-zero/db-wcag/types';
+import type { WCAGVersion, SC, Locale } from '@d-zero/db-wcag';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
