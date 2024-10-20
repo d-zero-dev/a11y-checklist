@@ -16,6 +16,7 @@
 		"lint:markuplint": "markuplint \"packages/website/src/**/*.{html,astro,svelte}\"",
 		"lint:textlint": "textlint --fix \"./{*,packages/{@d-zero/*,updater,website}/{*,src/**/*}}.{md}\"",
 		"release": "lerna publish --exact --conventional-commits --conventional-graduate",
+		"release:alpha:latest": "lerna publish --exact --force-publish --conventional-commits --conventional-prerelease --preid alpha",
 		"release:next": "lerna publish --dist-tag next --exact --force-publish --conventional-commits --conventional-prerelease --preid alpha",
 		"prerelease": "yarn build; yarn test",
 		"prepare": "husky",
