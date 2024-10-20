@@ -21,16 +21,12 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"import": "./src/index.js",
-			"types": "./src/index.d.ts"
-		},
-		"./types": {
-			"types": "./src/types.d.ts"
-		},
-		"./json": "./src/sc.json"
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
 	},
 	"files": [
-		"src"
+		"dist"
 	],
 	"scripts": {
 		"build": "tsc"
