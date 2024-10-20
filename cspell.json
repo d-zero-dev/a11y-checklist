@@ -1,6 +1,6 @@
 {
 	"import": ["@d-zero/cspell-config"],
-	"ignorePaths": ["packages/@d-zero/db-wcag/src/sc.json"],
+	"ignorePaths": ["packages/@d-zero/db-wcag/src/sc.ts"],
 	"words": [
 		//
 		"waic",

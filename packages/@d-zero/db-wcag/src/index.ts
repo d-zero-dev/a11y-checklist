@@ -1,7 +1,6 @@
-import { createRequire } from 'node:module';
+export type * from './types.js';
 
-const require = createRequire(import.meta.url);
-const sc = require('./sc.json');
+import { sc } from './sc.js';
 
 export const wcag = {
 	info: {
@@ -9,4 +8,4 @@ export const wcag = {
 		note: 'This content is based on W3C documentation.',
 	},
 	successCriterions: sc,
-};
+} as const;
