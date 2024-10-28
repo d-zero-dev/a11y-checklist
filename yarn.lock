@@ -1697,13 +1697,13 @@
     jsonc "2.0.0"
     minimatch "10.0.1"
 
-"@markuplint/html-parser@4.6.10":
-  version "4.6.10"
-  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.10.tgz#cf596f02a18060b757dfc965909d69a0d3283d2d"
-  integrity sha512-5EXVwS/gjttQcfXAifsVXD5lYMseAybWepu0S+znwdJvqp5toIEqG1/Ii1o+j3gsVATw+LHqeyDm/L6onjsNag==
+"@markuplint/html-parser@4.6.11":
+  version "4.6.11"
+  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.11.tgz#cc28cd8b3c4abf998c3b126c43a05a33252b6add"
+  integrity sha512-kr4RCxpAoMtiYXytG9WeFkSV+4jUJrR8d3rJh7qUwQS2o6VIu+bMM0g1Yy0iMptxexnOEZ1iEAvDjbQ74K0/SA==
   dependencies:
-    "@markuplint/ml-ast" "4.4.7"
-    "@markuplint/parser-utils" "4.7.1"
+    "@markuplint/ml-ast" "4.4.8"
+    "@markuplint/parser-utils" "4.7.2"
     parse5 "7.2.0"
     type-fest "4.26.1"
 
@@ -1825,20 +1825,6 @@
     type-fest "4.26.1"
     uuid "10.0.0"
 
-"@markuplint/parser-utils@4.7.1":
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.7.1.tgz#fabed0dd969e383cf39bdc8ab6481a9a9331e19c"
-  integrity sha512-1RsY2+H764R388dcnGZP5lemXN16PLxFvFNaiMXHHUzweoG/iMSPrqhvJbKrLTamMLYxGiRsLMkE25kUSQwT4g==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.7"
-    "@markuplint/ml-spec" "4.8.0"
-    "@markuplint/types" "4.6.3"
-    "@types/uuid" "10.0.0"
-    debug "4.3.7"
-    espree "10.2.0"
-    type-fest "4.26.1"
-    uuid "10.0.0"
-
 "@markuplint/parser-utils@4.7.2":
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.7.2.tgz#e110c93406563886f4224016d9f5e001c3daef42"
@@ -1914,14 +1900,14 @@
   dependencies:
     html-entities "2.5.2"
 
-"@markuplint/svelte-parser@4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.0.tgz#846ce05e807cd7a12c669dc5eeacbe8a590caf18"
-  integrity sha512-VHlbIUOsLOvRHtNC8C5el/zxeul/bVT6VRE0lDeYVoBdwuVTO3dIh9UdGhjDp8exl7sVw7BtH52M9VdzZLJ5Fw==
+"@markuplint/svelte-parser@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.1.tgz#0cd9eaf0979762a8b91f0ceb07064ed3d04a0156"
+  integrity sha512-IPXetsyGSmmwAez6MEi9JCCcEr2P4zCsgMoJhu2V1VV2xTOo6ANARZx+PfR35P59VVQUFregQ7ElOxBBJH0wkg==
   dependencies:
-    "@markuplint/html-parser" "4.6.10"
-    "@markuplint/ml-ast" "4.4.7"
-    "@markuplint/parser-utils" "4.7.1"
+    "@markuplint/html-parser" "4.6.11"
+    "@markuplint/ml-ast" "4.4.8"
+    "@markuplint/parser-utils" "4.7.2"
     svelte "5.1.3"
 
 "@markuplint/svelte-spec@4.5.10":
