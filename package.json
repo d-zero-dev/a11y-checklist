@@ -41,7 +41,7 @@
 		"@d-zero/commitlint-config": "5.0.0-alpha.49",
 		"@d-zero/linters": "5.0.0-alpha.45",
 		"@d-zero/tsconfig": "0.3.3",
-		"@markuplint/astro-parser": "4.6.11",
+		"@markuplint/astro-parser": "4.6.12",
 		"@markuplint/svelte-parser": "4.7.1",
 		"@markuplint/svelte-spec": "4.5.11",
 		"concurrently": "9.0.1",
