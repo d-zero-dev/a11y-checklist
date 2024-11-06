@@ -12,7 +12,7 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "0.9.4",
-		"@astrojs/svelte": "5.7.2",
+		"@astrojs/svelte": "5.7.3",
 		"@astrojs/tailwind": "5.1.2",
 		"@rgossiaux/svelte-headlessui": "2.0.0",
 		"@shikijs/rehype": "1.22.2",
