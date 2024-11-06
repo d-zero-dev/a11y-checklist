@@ -99,13 +99,13 @@
   dependencies:
     prismjs "^1.29.0"
 
-"@astrojs/svelte@5.7.2":
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/svelte/-/svelte-5.7.2.tgz#f260f458c1c0d8d630552de5c26ed02d8fd3636d"
-  integrity sha512-d3nfPe7OMoDqdw7SXfvYlyCSB4p84p92IIvEsu5E1jDPFbS1mlC76hjAlr0nJHQfV1MZPWifEmmfgDBWLCuS8g==
+"@astrojs/svelte@5.7.3":
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/svelte/-/svelte-5.7.3.tgz#2d9ad988798cd6002d3f761cd411f64d5682d756"
+  integrity sha512-0PAwn2KLVpGsJppG8dWM1P9+/VrjAdhMWgEgwC1PjY2xFG565bTw7OuGaS5zh5Fu4AcjVoBkVQKjW/N3mLnrJA==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^3.1.2"
-    svelte2tsx "^0.7.21"
+    svelte2tsx "^0.7.22"
 
 "@astrojs/tailwind@5.1.2":
   version "5.1.2"
@@ -12035,7 +12035,7 @@ svelte-hmr@^0.16.0:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.16.0.tgz#9f345b7d1c1662f1613747ed7e82507e376c1716"
   integrity sha512-Gyc7cOS3VJzLlfj7wKS0ZnzDVdv3Pn2IuVeJPk9m2skfhcu5bq3wtIZyQGggr7/Iim5rH5cncyQft/kRLupcnA==
 
-svelte2tsx@^0.7.21:
+svelte2tsx@^0.7.22:
   version "0.7.22"
   resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.7.22.tgz#2051d61d8581c538b39ce7c029ca9a4680113a83"
   integrity sha512-hf55ujq17ufVpDQlJzaQfRr9EjlLIwGmFlpKq4uYrQAQFw/99q1OcVYyBT6568iJySgBUY9PdccURrORmfetmQ==
