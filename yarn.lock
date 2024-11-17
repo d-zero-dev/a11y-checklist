@@ -1682,15 +1682,15 @@
     jsonc "2.0.0"
     minimatch "10.0.1"
 
-"@markuplint/html-parser@4.6.12":
-  version "4.6.12"
-  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.12.tgz#76f1dadd6573ca3128a23cc6551cec41cb435c76"
-  integrity sha512-mRtKWsfPWqN43YAFbq2xKZVI1osxKtGf7HmbcFVw13kG3b8mO1v35pSuMP0OLPD0I5siSOWrpVKjY92clHvERQ==
+"@markuplint/html-parser@4.6.13":
+  version "4.6.13"
+  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.13.tgz#2b289b1a1a12f2b8872599f0b5fd003ac314a060"
+  integrity sha512-H6Wv8Msb4uwzD46Efa1yKibFnE9C3bhCIfYmVCslecqHyZOlxCQoT/eQd0BqCp3pBDcqKKZGSfMgzBcggOxW9w==
   dependencies:
-    "@markuplint/ml-ast" "4.4.8"
-    "@markuplint/parser-utils" "4.8.0"
+    "@markuplint/ml-ast" "4.4.9"
+    "@markuplint/parser-utils" "4.8.1"
     parse5 "7.2.1"
-    type-fest "4.26.1"
+    type-fest "4.27.0"
 
 "@markuplint/html-parser@4.6.7":
   version "4.6.7"
@@ -1810,20 +1810,6 @@
     type-fest "4.26.1"
     uuid "10.0.0"
 
-"@markuplint/parser-utils@4.8.0":
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.8.0.tgz#36a4d9288120085c2b2fb484cd2a498b1f6dd88d"
-  integrity sha512-qc53HrX0LSXEkYZW5rTaWPk8OhfcRWc1O6PNV/dsLX8admMH9NRjJz8KnQYcjfUoD+3owrfThZYzUm8uTgu/bQ==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.8"
-    "@markuplint/ml-spec" "4.8.2"
-    "@markuplint/types" "4.6.4"
-    "@types/uuid" "10.0.0"
-    debug "4.3.7"
-    espree "10.3.0"
-    type-fest "4.26.1"
-    uuid "11.0.2"
-
 "@markuplint/parser-utils@4.8.1":
   version "4.8.1"
   resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.8.1.tgz#392f35c67588a0f8538975e7629463f99d53a7cd"
@@ -1899,15 +1885,15 @@
   dependencies:
     html-entities "2.5.2"
 
-"@markuplint/svelte-parser@4.7.2":
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.2.tgz#664e53ca375b6a832e9d752fd94e3e7584a5f100"
-  integrity sha512-0iOFFNkoOOfHXHqdm99dE+KSdXbHql5UJojdv3RlZyadcOVbWZVfdOvr5nNwiajzWEAIarCCHjuDSMnp4ulmRw==
+"@markuplint/svelte-parser@4.7.3":
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.3.tgz#e2cc4de8327e37da11710a6f4226e3032409ea78"
+  integrity sha512-qe6hBVKnsXO8pfwlhEFWDHsuT8MJEfA8tl1g80jg3oZAR58U1QCZFnBAgooDvWtNZvD5s+oK8nQ88ZEM4P1rqg==
   dependencies:
-    "@markuplint/html-parser" "4.6.12"
-    "@markuplint/ml-ast" "4.4.8"
-    "@markuplint/parser-utils" "4.8.0"
-    svelte "5.1.6"
+    "@markuplint/html-parser" "4.6.13"
+    "@markuplint/ml-ast" "4.4.9"
+    "@markuplint/parser-utils" "4.8.1"
+    svelte "5.2.2"
 
 "@markuplint/svelte-spec@4.5.12":
   version "4.5.12"
@@ -2929,7 +2915,7 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/estree@*", "@types/estree@1.0.6", "@types/estree@^1.0.0", "@types/estree@^1.0.1", "@types/estree@^1.0.5":
+"@types/estree@*", "@types/estree@1.0.6", "@types/estree@^1.0.0", "@types/estree@^1.0.1", "@types/estree@^1.0.5", "@types/estree@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
@@ -7540,12 +7526,19 @@ is-promise@^2.2.2:
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.2.2.tgz#39ab959ccbf9a774cf079f7b40c7a26f763135f1"
   integrity sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
 
-is-reference@^3.0.0, is-reference@^3.0.1, is-reference@^3.0.2:
+is-reference@^3.0.0, is-reference@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/is-reference/-/is-reference-3.0.2.tgz#154747a01f45cd962404ee89d43837af2cba247c"
   integrity sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==
   dependencies:
     "@types/estree" "*"
+
+is-reference@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/is-reference/-/is-reference-3.0.3.tgz#9ef7bf9029c70a67b2152da4adf57c23d718910f"
+  integrity sha512-ixkJoqQvAP88E6wLydLGGqCJsrFUnqoH6HnaczB8XmDH1oaWU+xxdptvikTgaEhtZ53Ky6YXiBuUI2WXLMCwjw==
+  dependencies:
+    "@types/estree" "^1.0.6"
 
 is-regex@^1.0.3, is-regex@^1.1.4:
   version "1.1.4"
@@ -12253,10 +12246,10 @@ svelte@4.2.19:
     magic-string "^0.30.4"
     periscopic "^3.1.0"
 
-svelte@5.1.6:
-  version "5.1.6"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.1.6.tgz#97f01dac0d7c44beb8dcd10ce3d3e34224931e1e"
-  integrity sha512-bYS/DpkqXk0j5UZgiNXrEjZYPRZ4Ncd87w4KUSbcZGyojA0+i/Ls9OGUjETHmdLe8RcQ0G8SX/T0PypPpAA/ew==
+svelte@5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.2.2.tgz#a9d28dd6942e59f303298902c546909161452b45"
+  integrity sha512-eHIJRcvA6iuXdRGMESTmBtWTQCcCiol4gyH9DA60ybS35W1x27cvtbndNvWDqX72blyf+AYeQ4gzZ0XGg3L8sw==
   dependencies:
     "@ampproject/remapping" "^2.3.0"
     "@jridgewell/sourcemap-codec" "^1.5.0"
@@ -12267,7 +12260,7 @@ svelte@5.1.6:
     axobject-query "^4.1.0"
     esm-env "^1.0.0"
     esrap "^1.2.2"
-    is-reference "^3.0.2"
+    is-reference "^3.0.3"
     locate-character "^3.0.0"
     magic-string "^0.30.11"
     zimmerframe "^1.1.2"
@@ -13306,11 +13299,6 @@ uuid@10.0.0, uuid@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
   integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
-
-uuid@11.0.2:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.0.2.tgz#a8d68ba7347d051e7ea716cc8dcbbab634d66875"
-  integrity sha512-14FfcOJmqdjbBPdDjFQyk/SdT4NySW4eM0zcG+HqbHP5jzuH56xO3J1DGhgs/cEMCfwYi3HQI1gnTO62iaG+tQ==
 
 uuid@11.0.3:
   version "11.0.3"
