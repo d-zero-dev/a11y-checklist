@@ -2512,14 +2512,14 @@
     "@types/hast" "^3.0.4"
     hast-util-to-html "^9.0.3"
 
-"@shikijs/core@1.24.3":
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.24.3.tgz#ac8f400a9d66cb68d61a46d0c949adb0dd03fee6"
-  integrity sha512-VRcf4GYUIkxIchGM9DrapRcxtgojg4IWKUtX5EtW+4PJiGzF2xQqZSv27PJt+WLc18KT3CNLpNWow9JYV5n+Rg==
+"@shikijs/core@1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.24.4.tgz#de1c454a4e2dbcfaee2dde51d3fac6041e6171f7"
+  integrity sha512-jjLsld+xEEGYlxAXDyGwWsKJ1sw5Pc1pnp4ai2ORpjx2UX08YYTC0NNqQYO1PaghYaR+PvgMOGuvzw2he9sk0Q==
   dependencies:
-    "@shikijs/engine-javascript" "1.24.3"
-    "@shikijs/engine-oniguruma" "1.24.3"
-    "@shikijs/types" "1.24.3"
+    "@shikijs/engine-javascript" "1.24.4"
+    "@shikijs/engine-oniguruma" "1.24.4"
+    "@shikijs/types" "1.24.4"
     "@shikijs/vscode-textmate" "^9.3.1"
     "@types/hast" "^3.0.4"
     hast-util-to-html "^9.0.4"
@@ -2533,14 +2533,14 @@
     "@shikijs/vscode-textmate" "^9.3.0"
     oniguruma-to-es "0.4.1"
 
-"@shikijs/engine-javascript@1.24.3":
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/@shikijs/engine-javascript/-/engine-javascript-1.24.3.tgz#84fd518ef0067a6f4e60a527e3b2fa675a59ec2c"
-  integrity sha512-De8tNLvYjeK6V0Gb47jIH2M+OKkw+lWnSV1j3HVDFMlNIglmVcTMG2fASc29W0zuFbfEEwKjO8Fe4KYSO6Ce3w==
+"@shikijs/engine-javascript@1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@shikijs/engine-javascript/-/engine-javascript-1.24.4.tgz#8fd1bf1bcb37d14f19412bb0791d1566d6c762c8"
+  integrity sha512-TClaQOLvo9WEMJv6GoUsykQ6QdynuKszuORFWCke8qvi6PeLm7FcD9+7y45UenysxEWYpDL5KJaVXTngTE+2BA==
   dependencies:
-    "@shikijs/types" "1.24.3"
+    "@shikijs/types" "1.24.4"
     "@shikijs/vscode-textmate" "^9.3.1"
-    oniguruma-to-es "0.8.0"
+    oniguruma-to-es "0.8.1"
 
 "@shikijs/engine-oniguruma@1.23.1":
   version "1.23.1"
@@ -2550,23 +2550,23 @@
     "@shikijs/types" "1.23.1"
     "@shikijs/vscode-textmate" "^9.3.0"
 
-"@shikijs/engine-oniguruma@1.24.3":
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/@shikijs/engine-oniguruma/-/engine-oniguruma-1.24.3.tgz#e549cb6f2050113ac65994b4e98f4704c3e427e8"
-  integrity sha512-iNnx950gs/5Nk+zrp1LuF+S+L7SKEhn8k9eXgFYPGhVshKppsYwRmW8tpmAMvILIMSDfrgqZ0w+3xWVQB//1Xw==
+"@shikijs/engine-oniguruma@1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@shikijs/engine-oniguruma/-/engine-oniguruma-1.24.4.tgz#6adc430ddf247eeed155d8a41883e36160f302cf"
+  integrity sha512-Do2ry6flp2HWdvpj2XOwwa0ljZBRy15HKZITzPcNIBOGSeprnA8gOooA/bLsSPuy8aJBa+Q/r34dMmC3KNL/zw==
   dependencies:
-    "@shikijs/types" "1.24.3"
+    "@shikijs/types" "1.24.4"
     "@shikijs/vscode-textmate" "^9.3.1"
 
-"@shikijs/rehype@1.24.3":
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/@shikijs/rehype/-/rehype-1.24.3.tgz#c23915dc167edd7d8832cac78560b4a90f37a9d6"
-  integrity sha512-H9PHKSjk0xY+ZGoqmWxjU6f6N6fT8YPchfdnV+8UVKKGbK/c4QZ/gr8X32q5mBx2GemGBZFF7z+VD5DA05UM5w==
+"@shikijs/rehype@1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@shikijs/rehype/-/rehype-1.24.4.tgz#c029c7752525387ed03f9173d0571b9dbb9ffcc4"
+  integrity sha512-NbGOGGB0+j/cdv7TKQXNCbuqSjiwmbb2bqjaCD6jPhjAtVo/9KEtpIR7QQQP0ZvcDNuHQHtntrfQnysa6kJ41Q==
   dependencies:
-    "@shikijs/types" "1.24.3"
+    "@shikijs/types" "1.24.4"
     "@types/hast" "^3.0.4"
     hast-util-to-string "^3.0.1"
-    shiki "1.24.3"
+    shiki "1.24.4"
     unified "^11.0.5"
     unist-util-visit "^5.0.0"
 
@@ -2578,10 +2578,10 @@
     "@shikijs/vscode-textmate" "^9.3.0"
     "@types/hast" "^3.0.4"
 
-"@shikijs/types@1.24.3":
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/@shikijs/types/-/types-1.24.3.tgz#6700007019cc5c2fa5db32ab1595f01b1e79d969"
-  integrity sha512-FPMrJ69MNxhRtldRk69CghvaGlbbN3pKRuvko0zvbfa2dXp4pAngByToqS5OY5jvN8D7LKR4RJE8UvzlCOuViw==
+"@shikijs/types@1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@shikijs/types/-/types-1.24.4.tgz#06ec8975732b68508f8423b01a5649eef8d9cea3"
+  integrity sha512-0r0XU7Eaow0PuDxuWC1bVqmWCgm3XqizIaT7SM42K03vc69LGooT0U8ccSR44xP/hGlNx4FKhtYpV+BU6aaKAA==
   dependencies:
     "@shikijs/vscode-textmate" "^9.3.1"
     "@types/hast" "^3.0.4"
@@ -9913,10 +9913,10 @@ oniguruma-to-es@0.4.1:
     regex "^5.0.0"
     regex-recursion "^4.2.1"
 
-oniguruma-to-es@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/oniguruma-to-es/-/oniguruma-to-es-0.8.0.tgz#c61efa9c114a39a009fabccd61c583be28db6e53"
-  integrity sha512-rY+/a6b+uCgoYIL9itjY0x99UUDHXmGaw7Jjk5ZvM/3cxDJifyxFr/Zm4tTmF6Tre18gAakJo7AzhKUeMNLgHA==
+oniguruma-to-es@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/oniguruma-to-es/-/oniguruma-to-es-0.8.1.tgz#a18767531ce562c0bfafa357a8cca0003c05323c"
+  integrity sha512-dekySTEvCxCj0IgKcA2uUCO/e4ArsqpucDPcX26w9ajx+DvMWLc5eZeJaRQkd7oC/+rwif5gnT900tA34uN9Zw==
   dependencies:
     emoji-regex-xs "^1.0.0"
     regex "^5.0.2"
@@ -11586,15 +11586,15 @@ shell-quote@^1.7.3, shell-quote@^1.8.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
 
-shiki@1.24.3:
-  version "1.24.3"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.24.3.tgz#50eeacd8ce88d054b3ecc6c542283bf7a77a12f6"
-  integrity sha512-eMeX/ehE2IDKVs71kB4zVcDHjutNcOtm+yIRuR4sA6ThBbdFI0DffGJiyoKCodj0xRGxIoWC3pk/Anmm5mzHmA==
+shiki@1.24.4:
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.24.4.tgz#fc468ded0cfd51d7d9fbcf7606467a4dc020307c"
+  integrity sha512-aVGSFAOAr1v26Hh/+GBIsRVDWJ583XYV7CuNURKRWh9gpGv4OdbisZGq96B9arMYTZhTQkmRF5BrShOSTvNqhw==
   dependencies:
-    "@shikijs/core" "1.24.3"
-    "@shikijs/engine-javascript" "1.24.3"
-    "@shikijs/engine-oniguruma" "1.24.3"
-    "@shikijs/types" "1.24.3"
+    "@shikijs/core" "1.24.4"
+    "@shikijs/engine-javascript" "1.24.4"
+    "@shikijs/engine-oniguruma" "1.24.4"
+    "@shikijs/types" "1.24.4"
     "@shikijs/vscode-textmate" "^9.3.1"
     "@types/hast" "^3.0.4"
 
