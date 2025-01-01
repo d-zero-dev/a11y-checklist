@@ -19,7 +19,7 @@
 		"@tailwindcss/container-queries": "0.1.1",
 		"astro": "4.13.4",
 		"jsdom": "25.0.1",
-		"pdfjs-dist": "4.9.155",
+		"pdfjs-dist": "4.10.38",
 		"rehype-stringify": "10.0.1",
 		"remark-parse": "11.0.0",
 		"remark-rehype": "11.1.1",
