@@ -52,7 +52,7 @@
 		"npm-run-all2": "7.0.2",
 		"prettier-plugin-astro": "0.14.1",
 		"prettier-plugin-svelte": "3.3.2",
-		"typescript": "5.7.2",
+		"typescript": "5.7.3",
 		"vitest": "2.1.8"
 	},
 	"volta": {
