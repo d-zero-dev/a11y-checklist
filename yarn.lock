@@ -1785,17 +1785,6 @@
     is-plain-object "5.0.0"
     type-fest "4.26.1"
 
-"@markuplint/ml-spec@4.9.1":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@markuplint/ml-spec/-/ml-spec-4.9.1.tgz#ab2ded350590a6c905b946c392a1e7de0dca0abf"
-  integrity sha512-wg5fG+sLueW6qF1i7JYlw66AeafbpH4vv+N59HaS7iZ0mAL7WU9mexU2tMJDpq04EHzhiHiyvHN4Zo7V3Ni/Tg==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/types" "4.7.1"
-    dom-accessibility-api "0.7.0"
-    is-plain-object "5.0.0"
-    type-fest "4.30.0"
-
 "@markuplint/ml-spec@4.9.2":
   version "4.9.2"
   resolved "https://registry.yarnpkg.com/@markuplint/ml-spec/-/ml-spec-4.9.2.tgz#3acf1704a548a84ad89b91813b54a3a549dcd373"
@@ -1899,12 +1888,12 @@
     "@markuplint/parser-utils" "4.8.3"
     svelte "5.9.1"
 
-"@markuplint/svelte-spec@4.5.14":
-  version "4.5.14"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.5.14.tgz#ffaef76ca775e01ea7dca43a2ba31878fe07e84e"
-  integrity sha512-0NstIihmBJK++olwbryagyc9OKLxucXDMILrqRdUxknF+L7k/011pNatJ4VR5fY7UoeXLHz2jjQ2qcjuvcPcjw==
+"@markuplint/svelte-spec@4.5.15":
+  version "4.5.15"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.5.15.tgz#0cea53048a37075c3e35ade2cd34833b81f38eb9"
+  integrity sha512-XbQgLZgL/NVlQ5beHivvuOK4ak1jp4cksWjvtbIrvDULKvNQz8Phy09xjveAVLdDeYvGx5ZXl+fA4yHgVeqVFA==
   dependencies:
-    "@markuplint/ml-spec" "4.9.1"
+    "@markuplint/ml-spec" "4.9.2"
 
 "@markuplint/types@4.6.0":
   version "4.6.0"
@@ -1920,22 +1909,6 @@
     debug "4.3.7"
     leven "4.0.0"
     type-fest "4.26.1"
-    whatwg-mimetype "4.0.0"
-
-"@markuplint/types@4.7.1":
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/@markuplint/types/-/types-4.7.1.tgz#6dc3ac4b0ea57745c338dd14b86dfac10965e3bb"
-  integrity sha512-TuyzNlFln5XM1N/07HErgbOBPdy3U7Wro3mxT46ixG2T8LCZQGIVJ34spHEOe/FdqvWDvd82J4ja+GQnpvXZoA==
-  dependencies:
-    "@markuplint/shared" "4.4.10"
-    "@types/css-tree" "2.3.9"
-    "@types/debug" "4.1.12"
-    "@types/whatwg-mimetype" "3.0.2"
-    bcp-47 "2.1.0"
-    css-tree "3.0.1"
-    debug "4.3.7"
-    leven "4.0.0"
-    type-fest "4.30.0"
     whatwg-mimetype "4.0.0"
 
 "@markuplint/types@4.7.2":
@@ -2996,11 +2969,6 @@
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/@types/css-tree/-/css-tree-2.3.8.tgz#0eabc115e45051b2f7abe51ee1531074b234ed19"
   integrity sha512-zABG3nI2UENsx7AQv63tI5/ptoAG/7kQR1H0OvG+WTWYHOR5pfAT3cGgC8SdyCrgX/TTxJBZNmx82IjCXs1juQ==
-
-"@types/css-tree@2.3.9":
-  version "2.3.9"
-  resolved "https://registry.yarnpkg.com/@types/css-tree/-/css-tree-2.3.9.tgz#54c404e0a803e7e660fdc08c84fe73ee5266cece"
-  integrity sha512-g1FE6xkPDP4tsccmTd6jIugjKZdxIDqAf9h2pc+4LsGgYbOyfa9phNjBHYbm6FtwIlNfT1NBx3f2zSeqO7aRAw==
 
 "@types/debug@4.1.12", "@types/debug@^4.0.0":
   version "4.1.12"
@@ -4949,14 +4917,6 @@ css-tree@3.0.0:
   integrity sha512-o88DVQ6GzsABn1+6+zo2ct801dBO5OASVyxbbvA2W20ue2puSh/VOuqUj90eUeMSX/xqGqBmOKiRQN7tJOuBXw==
   dependencies:
     mdn-data "2.10.0"
-    source-map-js "^1.0.1"
-
-css-tree@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-3.0.1.tgz#bea6deaea60bb5bcf416adfb1ecf607a8d9471f6"
-  integrity sha512-8Fxxv+tGhORlshCdCwnNJytvlvq46sOLSYEx2ZIGurahWvMucSRnyjPA3AmrMq4VPRYbHVpWj5VkiVasrM2H4Q==
-  dependencies:
-    mdn-data "2.12.1"
     source-map-js "^1.0.1"
 
 css-tree@3.1.0:
@@ -8921,11 +8881,6 @@ mdn-data@2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.10.0.tgz#701da407f8fbc7a42aa0ba0c149ec897daef8986"
   integrity sha512-qq7C3EtK3yJXMwz1zAab65pjl+UhohqMOctTgcqjLOWABqmwj+me02LSsCuEUxnst9X1lCBpoE0WArGKgdGDzw==
-
-mdn-data@2.12.1:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.12.1.tgz#10cb462215c13d95c92ff60d0fb3becac1bbb924"
-  integrity sha512-rsfnCbOHjqrhWxwt5/wtSLzpoKTzW7OXdT5lLOIH1OTYhWu9rRJveGq0sKvDZODABH7RX+uoR+DYcpFnq4Tf6Q==
 
 mdn-data@2.12.2:
   version "2.12.2"
@@ -13029,11 +12984,6 @@ type-fest@4.26.1:
   version "4.26.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.26.1.tgz#a4a17fa314f976dd3e6d6675ef6c775c16d7955e"
   integrity sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==
-
-type-fest@4.30.0:
-  version "4.30.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.30.0.tgz#cf411e7630578ad9e9884951dfaeef6588f970fe"
-  integrity sha512-G6zXWS1dLj6eagy6sVhOMQiLtJdxQBHIA9Z6HFUNLOlr6MFOgzV8wvmidtPONfPtEUv0uZsy77XJNzTAfwPDaA==
 
 type-fest@4.33.0:
   version "4.33.0"
