@@ -1698,15 +1698,15 @@
     jsonc "2.0.0"
     minimatch "10.0.1"
 
-"@markuplint/html-parser@4.6.15":
-  version "4.6.15"
-  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.15.tgz#c2cb5cf469b86338e646e7e1826deb12040f5cb8"
-  integrity sha512-ZiDsm3nJFkSvi8ndzfI6WFswBWQAtYpQW9njhI1P8PPsCnKAIsfxm/EYKf2P2lY3ZMzlQZc74kH0jq7FLFQRCw==
+"@markuplint/html-parser@4.6.16":
+  version "4.6.16"
+  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-4.6.16.tgz#abda80ac459c00f79b4d8a57a966804ed74b90c6"
+  integrity sha512-wgm9cMyS5pd9ennmy3mAagB75VNA217k+0mZp1r0iG9cLOqtrBBzI6FuIbapILGl7uPWhjbIGoNmvqrw2Bx3kg==
   dependencies:
     "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/parser-utils" "4.8.3"
+    "@markuplint/parser-utils" "4.8.4"
     parse5 "7.2.1"
-    type-fest "4.33.0"
+    type-fest "4.34.1"
 
 "@markuplint/html-parser@4.6.7":
   version "4.6.7"
@@ -1821,20 +1821,6 @@
     type-fest "4.26.1"
     uuid "10.0.0"
 
-"@markuplint/parser-utils@4.8.3":
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.8.3.tgz#d2a1842826309edddd02cf055b0e7b0aa64fadd8"
-  integrity sha512-W8wvZ8nF9wZhHRKkO0TFFfjoISyx0mgE/Yh5zaozunJhmR1g+4+ZB151gbO99lIRz5CQhgE0FnsbBHC+BvjUPw==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/ml-spec" "4.9.2"
-    "@markuplint/types" "4.7.2"
-    "@types/uuid" "10.0.0"
-    debug "4.4.0"
-    espree "10.3.0"
-    type-fest "4.33.0"
-    uuid "11.0.5"
-
 "@markuplint/parser-utils@4.8.4":
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.8.4.tgz#bffd96c0a2db25ef2da92c22b80694439052b928"
@@ -1903,15 +1889,15 @@
   dependencies:
     html-entities "2.5.2"
 
-"@markuplint/svelte-parser@4.7.5":
-  version "4.7.5"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.5.tgz#3e790b9fb486f08faab07064c42abdb1f33f753d"
-  integrity sha512-lRofHjXRE+N5zabio02ba5/GyimmKjovbHlSImT3sxDXYn6U5baea37JyES+DwKxxsdVb5frENEUnqpij3c01Q==
+"@markuplint/svelte-parser@4.7.6":
+  version "4.7.6"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-parser/-/svelte-parser-4.7.6.tgz#ad083e5a1fb2d0243cffd24353efded077445322"
+  integrity sha512-b/5k28bskRGAICYgQ9xBFtrC3wgx2lhRXS6/ujl1XXNgDj77IlJoSr6nlg5pqtB7qDG0qm7EijqM92dY8lEY6A==
   dependencies:
-    "@markuplint/html-parser" "4.6.15"
+    "@markuplint/html-parser" "4.6.16"
     "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/parser-utils" "4.8.3"
-    svelte "5.9.1"
+    "@markuplint/parser-utils" "4.8.4"
+    svelte "5.19.9"
 
 "@markuplint/svelte-spec@4.5.15":
   version "4.5.15"
@@ -5947,13 +5933,12 @@ esquery@^1.4.2, esquery@^1.6.0:
   dependencies:
     estraverse "^5.1.0"
 
-esrap@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/esrap/-/esrap-1.2.3.tgz#abe6c0cffeee013aaa8396ad8eaa7c0553768323"
-  integrity sha512-ZlQmCCK+n7SGoqo7DnfKaP1sJZa49P01/dXzmjCASSo04p72w8EksT2NMK8CEX8DhKsfJXANioIw8VyHNsBfvQ==
+esrap@^1.4.3:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/esrap/-/esrap-1.4.4.tgz#0cb6d2a694f5dc0a8f62f79d585a55c29ee2e572"
+  integrity sha512-tDN6xP/r/b3WmdpWm7LybrD252hY52IokcycPnO+WHfhFF0+n5AWtcLLK7VNV6m0uYgVRhGVs8OkZwRyfC7HzQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@types/estree" "^1.0.1"
 
 esrecurse@^4.3.0:
   version "4.3.0"
@@ -12355,10 +12340,10 @@ svelte@4.2.19:
     magic-string "^0.30.4"
     periscopic "^3.1.0"
 
-svelte@5.9.1:
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.9.1.tgz#26af3090692c5369a59f14ac6fecd4c70d9f292e"
-  integrity sha512-2iWB8J9j/tZqEfuplxSt7gi/iA0Fg7VFwWATxDmG/efttLI05hwLWAKIx4ltv+FtvJIhRGs28rJ0e8uY8e3LWg==
+svelte@5.19.9:
+  version "5.19.9"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.19.9.tgz#ab29aafe43a512a4ceb517c4f7e2ed4f972c87cc"
+  integrity sha512-860s752/ZZxHIsii31ELkdKBOCeAuDsfb/AGUXJyQyzUVLRSt4oqEw/BV5+2+mNg8mbqmD3OK+vMvwWMPM6f8A==
   dependencies:
     "@ampproject/remapping" "^2.3.0"
     "@jridgewell/sourcemap-codec" "^1.5.0"
@@ -12367,8 +12352,9 @@ svelte@5.9.1:
     acorn-typescript "^1.4.13"
     aria-query "^5.3.1"
     axobject-query "^4.1.0"
+    clsx "^2.1.1"
     esm-env "^1.2.1"
-    esrap "^1.2.3"
+    esrap "^1.4.3"
     is-reference "^3.0.3"
     locate-character "^3.0.0"
     magic-string "^0.30.11"
