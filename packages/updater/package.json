@@ -16,7 +16,7 @@
 		"html-minifier-terser": "7.2.0",
 		"jsdom": "25.0.1",
 		"prettier": "3.5.1",
-		"tsx": "4.19.2",
+		"tsx": "4.19.3",
 		"turndown": "7.2.0"
 	}
 }
