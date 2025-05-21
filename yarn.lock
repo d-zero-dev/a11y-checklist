@@ -1717,14 +1717,14 @@
     yargs "17.7.2"
     yargs-parser "21.1.1"
 
-"@markuplint/astro-parser@4.6.16":
-  version "4.6.16"
-  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-4.6.16.tgz#857ff49cc611801875a5626695ae54d28118d317"
-  integrity sha512-Yf7TUsEQ1FfxNpfMliOqO5sUgV0k0v6qBIU8Q8OBLHvg3JCuIx2uEylSmHl+AxgjnPBMwolZwR9o8nOwDUIVhQ==
+"@markuplint/astro-parser@4.6.19":
+  version "4.6.19"
+  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-4.6.19.tgz#c024e6df363ae97100692e1f4035a4c00595c203"
+  integrity sha512-J7856YzfNrDDusrvvxdwbG6AfnobYJthUiICmWCHTuoqyid8DVYPg/SwHV0uR+ZUla0X6c4aHS6jG6HZbI+SdQ==
   dependencies:
     "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/parser-utils" "4.8.4"
-    astro-eslint-parser "1.2.1"
+    "@markuplint/parser-utils" "4.8.7"
+    astro-eslint-parser "1.2.2"
 
 "@markuplint/cli-utils@4.4.5":
   version "4.4.5"
@@ -1862,6 +1862,17 @@
     is-plain-object "5.0.0"
     type-fest "4.34.1"
 
+"@markuplint/ml-spec@4.9.6":
+  version "4.9.6"
+  resolved "https://registry.yarnpkg.com/@markuplint/ml-spec/-/ml-spec-4.9.6.tgz#4bf67d2c67a0d152773a6f19d044a3cb8dbbab36"
+  integrity sha512-0tVsthZM5ZbHhIQgPQpHUgekghc5v1xYPG/lbXR9zR43waPVI/WJPtyXogtoYe06ikWG29i9B8vUplAwHfDwtg==
+  dependencies:
+    "@markuplint/ml-ast" "4.4.9"
+    "@markuplint/types" "4.7.6"
+    dom-accessibility-api "0.7.0"
+    is-plain-object "5.0.0"
+    type-fest "4.39.1"
+
 "@markuplint/parser-utils@4.6.7":
   version "4.6.7"
   resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.6.7.tgz#2f4c06b9462310cf9a773b1f7b899505c08126b7"
@@ -1889,6 +1900,20 @@
     espree "10.3.0"
     type-fest "4.34.1"
     uuid "11.0.5"
+
+"@markuplint/parser-utils@4.8.7":
+  version "4.8.7"
+  resolved "https://registry.yarnpkg.com/@markuplint/parser-utils/-/parser-utils-4.8.7.tgz#a134e48b16c11a649c004c6247758003fbd26c6d"
+  integrity sha512-7DPGi8PfD0CiZT2ifvtYnT7Oqci+PH64jXSBl4mJ8Oljg+ht1hrbJxJo5jk+gc+4K6PTZil9FGLhRBeiKks/aA==
+  dependencies:
+    "@markuplint/ml-ast" "4.4.9"
+    "@markuplint/ml-spec" "4.9.6"
+    "@markuplint/types" "4.7.6"
+    "@types/uuid" "10.0.0"
+    debug "4.4.0"
+    espree "10.3.0"
+    type-fest "4.39.1"
+    uuid "11.1.0"
 
 "@markuplint/pug-parser@4.6.7":
   version "4.6.7"
@@ -1936,6 +1961,13 @@
   integrity sha512-hKpzBibNa5wItnMmOLAT1w39F1r+r35juPVGyd25y7xczxsbWgyl1l1xE2lA+OpAotzYDBkDTqpkErlLUqlL7A==
   dependencies:
     html-entities "2.5.2"
+
+"@markuplint/shared@4.4.11":
+  version "4.4.11"
+  resolved "https://registry.yarnpkg.com/@markuplint/shared/-/shared-4.4.11.tgz#bddcd553b6fa66f11e6833caaddcaad117ceb706"
+  integrity sha512-Jxcwsrl68Y3x+t8abt2XFlfM9kp6ndH025+uW1TB9GGGmNyK855+nHCsmoyl3nQg76CbIMUu1lruMVLU4gNuLg==
+  dependencies:
+    html-entities "2.6.0"
 
 "@markuplint/shared@4.4.5":
   version "4.4.5"
@@ -1991,6 +2023,22 @@
     debug "4.4.0"
     leven "4.0.0"
     type-fest "4.34.1"
+    whatwg-mimetype "4.0.0"
+
+"@markuplint/types@4.7.6":
+  version "4.7.6"
+  resolved "https://registry.yarnpkg.com/@markuplint/types/-/types-4.7.6.tgz#596e1f1d3cc5ed8265548fe0a9d613e898c5927c"
+  integrity sha512-PsGWjVSZY2td+Mue3o3yHVvlMx7c9jpK4MqhR8AKDpYWPEF2VzmHET4b2l/vbB4ZJCgRz8N27zjTuxowZ1zz8g==
+  dependencies:
+    "@markuplint/shared" "4.4.11"
+    "@types/css-tree" "2.3.10"
+    "@types/debug" "4.1.12"
+    "@types/whatwg-mimetype" "3.0.2"
+    bcp-47 "2.1.0"
+    css-tree "3.1.0"
+    debug "4.4.0"
+    leven "4.0.0"
+    type-fest "4.39.1"
     whatwg-mimetype "4.0.0"
 
 "@mixmark-io/domino@^2.2.0":
@@ -3768,10 +3816,10 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-astro-eslint-parser@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/astro-eslint-parser/-/astro-eslint-parser-1.2.1.tgz#01c331ff1c9b3a23ea203a8dfd429c26d8f9eec8"
-  integrity sha512-3oqANMjrvJ+IE5pwlUWsH/4UztmYf/GTL0HPUkWnYBNAHiGVGrOh2EbegxS5niAwlO0w9dRYk0CkCPlJcu8c3Q==
+astro-eslint-parser@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/astro-eslint-parser/-/astro-eslint-parser-1.2.2.tgz#e622776c7ec6819cb248e69aa6291504be92c8c4"
+  integrity sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==
   dependencies:
     "@astrojs/compiler" "^2.0.0"
     "@typescript-eslint/scope-manager" "^7.0.0 || ^8.0.0"
@@ -7120,6 +7168,11 @@ html-entities@2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.5.2.tgz#201a3cf95d3a15be7099521620d19dfb4f65359f"
   integrity sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA==
+
+html-entities@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.6.0.tgz#7c64f1ea3b36818ccae3d3fb48b6974208e984f8"
+  integrity sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==
 
 html-escaper@^3.0.3:
   version "3.0.3"
@@ -13081,6 +13134,11 @@ type-fest@4.34.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.34.1.tgz#406a9c573cc51c3fbfee3c85742cf85c52860076"
   integrity sha512-6kSc32kT0rbwxD6QL1CYe8IqdzN/J/ILMrNK+HMQCKH3insCDRY/3ITb0vcBss0a3t72fzh2YSzj8ko1HgwT3g==
 
+type-fest@4.39.1:
+  version "4.39.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.39.1.tgz#7521f6944e279abaf79cf60cfbc4823f4858083e"
+  integrity sha512-uW9qzd66uyHYxwyVBYiwS4Oi0qZyUqwjU+Oevr6ZogYiXt99EOYtwvzMSLw1c3lYo2HzJsep/NB23iEVEgjG/w==
+
 type-fest@^0.18.0:
   version "0.18.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.18.1.tgz#db4bc151a4a2cf4eebf9add5db75508db6cc841f"
@@ -13452,6 +13510,11 @@ uuid@11.0.5:
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.0.5.tgz#07b46bdfa6310c92c3fb3953a8720f170427fc62"
   integrity sha512-508e6IcKLrhxKdBbcA2b4KQZlLVp2+J5UwQ6F7Drckkc5N9ZJwFa4TgWtsww9UG8fGHbm6gbV19TdM5pQ4GaIA==
+
+uuid@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
 
 validate-npm-package-license@3.0.4, validate-npm-package-license@^3.0.1, validate-npm-package-license@^3.0.4:
   version "3.0.4"
