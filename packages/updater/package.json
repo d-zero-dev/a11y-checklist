@@ -15,7 +15,7 @@
 		"@types/jsdom": "21.1.7",
 		"html-minifier-terser": "7.2.0",
 		"jsdom": "26.1.0",
-		"prettier": "3.5.2",
+		"prettier": "3.5.3",
 		"tsx": "4.19.3",
 		"turndown": "7.2.0"
 	}
