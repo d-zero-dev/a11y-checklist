@@ -23,7 +23,7 @@
 		"rehype-stringify": "10.0.1",
 		"remark-parse": "11.0.0",
 		"remark-rehype": "11.1.2",
-		"svelte": "4.2.19",
+		"svelte": "4.2.20",
 		"tailwindcss": "3.4.17",
 		"unified": "11.0.5"
 	}
