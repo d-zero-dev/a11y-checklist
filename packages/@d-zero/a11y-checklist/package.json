@@ -32,7 +32,7 @@
 		"build:schema": "schema.json"
 	},
 	"devDependencies": {
-		"js-yaml": "4.1.0",
+		"js-yaml": "4.1.1",
 		"json-schema-to-typescript": "15.0.4",
 		"npm-watch": "0.13.0"
 	}
