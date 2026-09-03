@@ -24,7 +24,7 @@
 		"remark-parse": "11.0.0",
 		"remark-rehype": "11.1.2",
 		"svelte": "4.2.20",
-		"tailwindcss": "3.4.17",
+		"tailwindcss": "3.4.19",
 		"unified": "11.0.5"
 	}
 }
