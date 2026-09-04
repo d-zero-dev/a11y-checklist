@@ -1889,11 +1889,6 @@
   resolved "https://registry.yarnpkg.com/@markuplint/ml-ast/-/ml-ast-4.4.4.tgz#dbdc8548707795c102d63bd33554cff1c0874c87"
   integrity sha512-qh5fEhJuCQi/akdbsd9CMTGViSlxdJjc4eMPHXN9c9BtP2KAvbFbhWdfbRpqAakrR1j4VndHEAJQ0GilnLLprg==
 
-"@markuplint/ml-ast@4.4.9":
-  version "4.4.9"
-  resolved "https://registry.yarnpkg.com/@markuplint/ml-ast/-/ml-ast-4.4.9.tgz#68f17204f01f5f6e81cc43274b3b5cb21b45b6af"
-  integrity sha512-PPojBxU0qL0ivbv7SIqOekMHKC4Cbdwm+vJunkiHQKjI3Dxb50bkuk8uF4X5j7uouwnk2VDCHE9GpOXtFdMfow==
-
 "@markuplint/ml-config@4.7.4":
   version "4.7.4"
   resolved "https://registry.yarnpkg.com/@markuplint/ml-config/-/ml-config-4.7.4.tgz#004d46305e64a666132317018671ef4c830b6d2d"
@@ -1949,17 +1944,6 @@
     dom-accessibility-api "0.7.0"
     is-plain-object "5.0.0"
     type-fest "4.26.1"
-
-"@markuplint/ml-spec@4.9.6":
-  version "4.9.6"
-  resolved "https://registry.yarnpkg.com/@markuplint/ml-spec/-/ml-spec-4.9.6.tgz#4bf67d2c67a0d152773a6f19d044a3cb8dbbab36"
-  integrity sha512-0tVsthZM5ZbHhIQgPQpHUgekghc5v1xYPG/lbXR9zR43waPVI/WJPtyXogtoYe06ikWG29i9B8vUplAwHfDwtg==
-  dependencies:
-    "@markuplint/ml-ast" "4.4.9"
-    "@markuplint/types" "4.7.6"
-    dom-accessibility-api "0.7.0"
-    is-plain-object "5.0.0"
-    type-fest "4.39.1"
 
 "@markuplint/parser-utils@4.18.3":
   version "4.18.3"
@@ -2036,13 +2020,6 @@
   dependencies:
     html-entities "2.6.0"
 
-"@markuplint/shared@4.4.11":
-  version "4.4.11"
-  resolved "https://registry.yarnpkg.com/@markuplint/shared/-/shared-4.4.11.tgz#bddcd553b6fa66f11e6833caaddcaad117ceb706"
-  integrity sha512-Jxcwsrl68Y3x+t8abt2XFlfM9kp6ndH025+uW1TB9GGGmNyK855+nHCsmoyl3nQg76CbIMUu1lruMVLU4gNuLg==
-  dependencies:
-    html-entities "2.6.0"
-
 "@markuplint/shared@4.4.5":
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/@markuplint/shared/-/shared-4.4.5.tgz#7c2ab557fcd15b1ff536b989d0def8900449123b"
@@ -2060,12 +2037,12 @@
     "@markuplint/parser-utils" "4.18.3"
     svelte "5.55.4"
 
-"@markuplint/svelte-spec@4.5.19":
-  version "4.5.19"
-  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.5.19.tgz#2d886883d10bcaa9bb2d710082328b4caa947824"
-  integrity sha512-5R1Bue0KDmtEpSut5RYZ7n9ypat/XWd8m2Bba0Jp7YbheAkL7rqRmZCBZ75Z4GNXmVbkZHyVkxEAXX64BjnDBQ==
+"@markuplint/svelte-spec@4.18.0":
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/@markuplint/svelte-spec/-/svelte-spec-4.18.0.tgz#8b5daf33fe466b65d8453817352bef6a9f5224e8"
+  integrity sha512-1nLtX7FLKf+6+9cvSsMLim0fGrD3MconwjRmvI0VVYYmC4u8kblRnSW4hZ9piJLMJvGQQWadezvV+jWK8hOrTA==
   dependencies:
-    "@markuplint/ml-spec" "4.9.6"
+    "@markuplint/ml-spec" "4.18.0"
 
 "@markuplint/types@4.18.0":
   version "4.18.0"
@@ -2097,22 +2074,6 @@
     debug "4.3.7"
     leven "4.0.0"
     type-fest "4.26.1"
-    whatwg-mimetype "4.0.0"
-
-"@markuplint/types@4.7.6":
-  version "4.7.6"
-  resolved "https://registry.yarnpkg.com/@markuplint/types/-/types-4.7.6.tgz#596e1f1d3cc5ed8265548fe0a9d613e898c5927c"
-  integrity sha512-PsGWjVSZY2td+Mue3o3yHVvlMx7c9jpK4MqhR8AKDpYWPEF2VzmHET4b2l/vbB4ZJCgRz8N27zjTuxowZ1zz8g==
-  dependencies:
-    "@markuplint/shared" "4.4.11"
-    "@types/css-tree" "2.3.10"
-    "@types/debug" "4.1.12"
-    "@types/whatwg-mimetype" "3.0.2"
-    bcp-47 "2.1.0"
-    css-tree "3.1.0"
-    debug "4.4.0"
-    leven "4.0.0"
-    type-fest "4.39.1"
     whatwg-mimetype "4.0.0"
 
 "@mixmark-io/domino@^2.2.0":
@@ -3124,11 +3085,6 @@
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.6.0.tgz#eac397f28bf1d6ae0ae081363eca2f425bedf0d5"
   integrity sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==
-
-"@types/css-tree@2.3.10":
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/@types/css-tree/-/css-tree-2.3.10.tgz#b96abb37c1b51b03fe16054c186130c6ab69fef7"
-  integrity sha512-WcaBazJ84RxABvRttQjjFWgTcHvZR9jGr0Y3hccPkHjFyk/a3N8EuxjKr+QfrwjoM5b1yI1Uj1i7EzOAAwBwag==
 
 "@types/css-tree@2.3.11":
   version "2.3.11"
@@ -5158,14 +5114,6 @@ css-tree@3.0.0:
     mdn-data "2.10.0"
     source-map-js "^1.0.1"
 
-css-tree@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-3.1.0.tgz#7aabc035f4e66b5c86f54570d55e05b1346eb0fd"
-  integrity sha512-0eW44TGN5SQXU1mWSkKwFstI/22X2bG1nYzZTYMAWjylYURhse752YgbE4Cx46AC+bAvI+/dYTPRk1LqSUnu6w==
-  dependencies:
-    mdn-data "2.12.2"
-    source-map-js "^1.0.1"
-
 css-tree@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-3.2.1.tgz#86cac7011561272b30e6b1e042ba6ce047aa7518"
@@ -5282,13 +5230,6 @@ debug@4.3.7, debug@~4.3.6:
   version "4.3.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.7.tgz#87945b4151a011d76d95a198d7111c865c360a52"
   integrity sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==
-  dependencies:
-    ms "^2.1.3"
-
-debug@4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.0.tgz#2b3f2aea2ffeb776477460267377dc8710faba8a"
-  integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
   dependencies:
     ms "^2.1.3"
 
@@ -9172,11 +9113,6 @@ mdn-data@2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.10.0.tgz#701da407f8fbc7a42aa0ba0c149ec897daef8986"
   integrity sha512-qq7C3EtK3yJXMwz1zAab65pjl+UhohqMOctTgcqjLOWABqmwj+me02LSsCuEUxnst9X1lCBpoE0WArGKgdGDzw==
-
-mdn-data@2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.12.2.tgz#9ae6c41a9e65adf61318b32bff7b64fbfb13f8cf"
-  integrity sha512-IEn+pegP1aManZuckezWCO+XZQDplx1366JoVhTpMpBB1sPey/SbveZQUosKiKiGYjg1wH4pMlNgXbCiYgihQA==
 
 mdn-data@2.27.1:
   version "2.27.1"
@@ -13341,11 +13277,6 @@ type-fest@4.26.1:
   version "4.26.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.26.1.tgz#a4a17fa314f976dd3e6d6675ef6c775c16d7955e"
   integrity sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==
-
-type-fest@4.39.1:
-  version "4.39.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.39.1.tgz#7521f6944e279abaf79cf60cfbc4823f4858083e"
-  integrity sha512-uW9qzd66uyHYxwyVBYiwS4Oi0qZyUqwjU+Oevr6ZogYiXt99EOYtwvzMSLw1c3lYo2HzJsep/NB23iEVEgjG/w==
 
 type-fest@5.6.0:
   version "5.6.0"
